@@ -3,9 +3,9 @@
 
 name = "Minimal Bootstrap Hugo Theme"
 license = "MIT"
-licenselink = "TODO"
-description = "A minimal bootstrap hugo theme that focuses on content readability"
-homepage = "TODO"
+licenselink = "https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/blob/master/LICENSE"
+description = "A minimal hugo theme made with bootstrap that focuses on content readability"
+homepage = "https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme"
 tags = ["minimalist", "blog", "clean", "simple", "bootstrap"]
 features = ["TODO"] # Look at others for examples 
 min_version = 0.48
