@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+{{ $navbarExpand := "navbar-expand" }}
+{{ if eq .Site.Params.collapseNavbar true}}{{ $navbarExpand = "navbar-expand-sm" }}{{ end }}
+<nav class="navbar {{ $navbarExpand }} navbar-dark bg-dark">
   <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
       aria-expanded="false" aria-label="Toggle navigation">
