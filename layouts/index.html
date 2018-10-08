@@ -1,0 +1,19 @@
+{{- define "main" -}}
+
+{{ $homepage := "" }}{{ range first 1 .Site.Menus.nav }}{{ $homepage = .Name }}{{ end }}
+<h1>{{ $homepage }}</h1>
+
+{{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
+  <p>
+    <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    {{ $customDateFormat := "January 2, 2006" }}
+    {{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
+    <small class="text-secondary">{{ .PublishDate.Format $customDateFormat }}</small>
+    {{ if eq .Site.Params.showPostSummary true }}
+    <br>
+    {{ .Summary }}
+    {{ end }}
+  </p>
+{{ end }}
+
+{{- end -}}

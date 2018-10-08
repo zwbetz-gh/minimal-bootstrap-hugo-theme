@@ -1,0 +1,60 @@
+<style>  
+.navbar a {
+  font-weight: bold;
+}
+.navbar {
+  margin-bottom: 1rem;
+}
+article {
+  padding-bottom: 1rem;
+}
+
+{{ with .Site.Params.wrapperMaxWidth }}
+.container {
+  max-width: {{ . }}px;
+}
+{{ else }}
+.container {
+  max-width: 800px;
+}
+{{ end }}
+
+{{ if eq .Site.Params.customCodeStyle true }}
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+code {
+  padding: 2px 4px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9rem;
+}
+{{ end }}
+
+{{ if eq .Site.Params.customBlockquoteStyle true }}
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1rem;
+  border-left: 5px solid #eee;
+}
+{{ end }}
+</style>

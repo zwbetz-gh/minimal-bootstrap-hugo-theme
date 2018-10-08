@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Minimal Bootstrap Hugo Theme"
+license = "MIT"
+licenselink = "TODO"
+description = "A minimal bootstrap hugo theme that focuses on content readability"
+homepage = "TODO"
+tags = ["minimalist", "blog", "clean", "simple", "bootstrap"]
+features = ["TODO"] # Look at others for examples 
+min_version = 0.48
+
+[author]
+  name = "Zachary Betz"
+  homepage = "https://zwbetz.com/"
