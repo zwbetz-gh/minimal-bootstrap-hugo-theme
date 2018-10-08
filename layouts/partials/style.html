@@ -1,10 +1,26 @@
-<style>  
-.navbar {
-  margin-bottom: 1rem;
+<style>
+body {
+  min-width: 300px;
 }
 
-.navbar a {
-  font-weight: bold;
+.custom-navbar {
+  margin-bottom: 1rem;
+  height: 60px;
+  background-color: #212529;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1rem; 
+  font-weight: bold; 
+  color: rgba(255,255,255,.5);
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+  color: rgba(255,255,255,.75);
 }
 
 article {
@@ -16,8 +32,8 @@ img {
 }
 
 {{ with .Site.Params.navbarBackgroundColor }}
-.navbar {
-  background-color: {{ . }}!important;
+.custom-navbar {
+  background-color: {{ . }};
 }
 {{ end }}
 
