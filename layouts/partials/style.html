@@ -1,17 +1,29 @@
 <style>  
-.navbar a {
-  font-weight: bold;
-}
 .navbar {
   margin-bottom: 1rem;
 }
+
+.navbar a {
+  font-weight: bold;
+}
+
 article {
   padding-bottom: 1rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+{{ with .Site.Params.navbarBackgroundColor }}
+.navbar {
+  background-color: {{ . }}!important;
+}
+{{ end }}
+
 {{ with .Site.Params.wrapperMaxWidth }}
 .container {
-  max-width: {{ . }}px;
+  max-width: {{ . }};
 }
 {{ else }}
 .container {
@@ -29,6 +41,7 @@ pre {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 pre code {
   padding: 0;
   font-size: inherit;
@@ -38,6 +51,7 @@ pre code {
   border: none;
   border-radius: 0;
 }
+
 code {
   padding: 2px 4px;
   color: #c7254e;
