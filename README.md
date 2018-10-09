@@ -77,6 +77,7 @@ title = "Site Title"
 author = "Your Name"
 languageCode = "en-us"
 theme = "minimal-bootstrap-hugo-theme"
+enableGitInfo = false
 
 [params]
 description = "Your site description here"
@@ -118,10 +119,11 @@ theme = "minimal-bootstrap-hugo-theme"
 <br><br>
 
 ```
-enableGitInfo = true
+enableGitInfo = false
 ```
 * Optional
-* If true, `lastmod` date will be git's last revision of the file, instead of the `lastmod` date specified in frontmatter
+* If set to true, `lastmod` date will be git's last revision of the file
+* If set to false, `lastmod` date will pull from front matter
 <br><br>
 
 ```
