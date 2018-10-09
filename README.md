@@ -167,14 +167,14 @@ customDateFormat = "Monday, January 2, 2006"
 ```
 customCodeStyle = true
 ```
-* Optional (but recommended)
+* Optional (but recommended, so that your code snippets are formatted nicely)
 * If set to true, this will use custom code styles
 <br><br>
 
 ```
 customBlockquoteStyle = true
 ```
-* Optional (but recommended)
+* Optional (but recommended, so that your blockquotes are formatted nicely)
 * If set to true, this will use custom blockquote styles
 <br><br>
 
