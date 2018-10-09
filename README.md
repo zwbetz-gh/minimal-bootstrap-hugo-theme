@@ -4,13 +4,25 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
 
 ## Table of Contents
 
-TODO generate
+* [Screenshot](#screenshot)
+* [Theme Installation Options](#theme-installation-options)
+* [Theme Update Options](#theme-update-options)
+* [Site Layout](#site-layout)
+* [Configuration](#configuration)
+    * [Example config.toml](#example-configtoml)
+    * [Config Options](#config-options)
+* [Front Matter Dates](#front-matter-dates)
+* [Shortcodes](#shortcodes)
+    * [blockquote](#blockquote)
+    * [imgAbs](#imgabs)
+    * [imgRel](#imgrel)
+* [Contribution](#contribution)
 
 ## Screenshot
 
 TODO take
 
-## Installation Options
+## Theme Installation Options
 
 1. Add it as a git submodule (this requires your site to already be in a git repo)
     1. `cd YOUR_SITE`
@@ -31,7 +43,7 @@ Once installed, add this line to your `config.toml`:
 theme = "minimal-bootstrap-hugo-theme"
 ```
 
-## Update Options
+## Theme Update Options
 
 If you used one of the git options to install the theme, update it by running:
 
@@ -57,103 +69,153 @@ This theme expects your _posts_ to be under the `post/` folder.
 ```
 ## Configuration
 
-### `config.toml`
+### Example `config.toml`
 
 ```toml
 baseurl = "https://example.org/"
 title = "Site Title"
 author = "Your Name"
 languageCode = "en-us"
-
-# Required
 theme = "minimal-bootstrap-hugo-theme"
 
-# Optional
-# If true, lastmod date will be git's last revision of the file, instead of the lastmod date specified in frontmatter
-enableGitInfo = true
-
-# Required
 [params]
-
-# Optional
-# If present, this will populate the <meta> description element in your <head>
 description = "Your site description here"
-
-# Optional
-# If present, it will set the navbar background color
-# The color value can be one of the below:
-# hex like "#000"
-# rgb like "rgb(0,0,0)"
-# rgba like "rgba(0,0,0,1)"
-# name like "black"
 navbarBackgroundColor = "#000"
-
-# Optional
-# If present, it will set the max width of the navbar and page content
-# If not present, the default wrapper max width is "800px"
-wrapperMaxWidth = "600px"
-
-# Optional
-# If present, it will set the date format on your homepage and posts
-# If not present, the default date format is "January 2, 2006"
-# See below hugo docs link for a list of valid date formats 
-# https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+wrapperMaxWidth = "780px"
 customDateFormat = "Monday, January 2, 2006"
-
-# Optional
-# If set to true, this will use custom code styles
 customCodeStyle = true
-
-# Optional
-# If set to true, this will use custom blockquote styles
 customBlockquoteStyle = true
-
-# Optional
-# If set to true, this will show a summary for each post on the homepage
-# For how many words to show in the summary, where to cut it off, etc., see below hugo docs link
-# https://gohugo.io/content-management/summaries/
 showPostSummary = false
-
-# Optional
-# If present, google analytics will be enabled
 googleAnalytics = "UA-123456789-1"
-
-# Optional
-# If present, your favicon will display as the tab icon
-# The value is the relative path to your favicon
-# The favicon is also known as your tab icon or your bookmark icon
-# It must have the extension of ".ico"
-# To convert a ".jpg" or ".png" image to ".ico", see below link
-# https://realfavicongenerator.net/
 tabIcon = "favicon.ico"
 
-# Required
 [menu]
-
-# The first nav menu item is required
-# Additional nav menu items are optional
-# The weight determines what order they will show in
-
-# Required
 [[menu.nav]]
 name = "Posts"
 url = "/"
 weight = 1
-
-# Optional
 [[menu.nav]]
 name = "About"
 url = "/about/"
 weight = 2
-
-# Optional
 [[menu.nav]]
 name = "Contact"
 url = "/contact/"
 weight = 3
+[[menu.nav]]
+name = "Random Page"
+url = "/random-page/"
+weight = 4
 ```
 
-### Front Matter Dates
+### Config Options
+
+```
+theme = "minimal-bootstrap-hugo-theme"
+```
+* **Required**
+* Set your site's theme
+<br><br>
+
+```
+enableGitInfo = true
+```
+* Optional
+* If true, `lastmod` date will be git's last revision of the file, instead of the `lastmod` date specified in frontmatter
+<br><br>
+
+```
+description = "Your site description here"
+```
+* Optional
+* If present, this will populate the `<meta>` description element
+<br><br>
+
+```
+navbarBackgroundColor = "#000"
+```
+* Optional
+* If present, this will set the navbar background color
+* If not present, the default navbar background color is `#212529`
+* The color value can be one of the below:
+    * hex: `"#000"`
+    * rgb: `"rgb(0,0,0)"`
+    * rgba: `"rgba(0,0,0,1)"`
+    * name: `"black"`
+<br><br>
+
+```
+wrapperMaxWidth = "780px"
+```
+* Optional
+* If present, this will set the max width of the navbar and page content
+* If not present, the default max width is `"800px"`
+<br><br>
+
+```
+customDateFormat = "Monday, January 2, 2006"
+```
+* Optional
+* If present, this will set the date format on your homepage and posts
+* If not present, the default date format is `"January 2, 2006"`
+* See below hugo docs link for a list of valid date formats 
+* <https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference>
+<br><br>
+
+```
+customCodeStyle = true
+```
+* Optional (but recommended)
+* If set to true, this will use custom code styles
+<br><br>
+
+```
+customBlockquoteStyle = true
+```
+* Optional (but recommended)
+* If set to true, this will use custom blockquote styles
+<br><br>
+
+```
+showPostSummary = false
+```
+* Optional
+* If set to true, this will show a summary for each post on the homepage
+* For how many words to show in the summary, where to cut it off, etc., see below hugo docs link
+* <https://gohugo.io/content-management/summaries/>
+<br><br>
+
+```
+googleAnalytics = "UA-123456789-1"
+```
+* Optional
+* If present, google analytics will be enabled
+<br><br>
+
+```
+tabIcon = "favicon.ico"
+```
+* Optional
+* If present, your favicon will display as the tab icon
+* The value is the relative path to your favicon
+* It must have the extension of ".ico". To convert a ".jpg" or ".png" image to ".ico", see below link
+* <https://realfavicongenerator.net/>
+<br><br>
+
+```
+[menu]
+[[menu.nav]]
+name = "Posts"
+url = "/"
+weight = 1
+```
+* **Required**
+* At least one menu nav is required
+* The `name` is what will display in the navbar
+* The `url` will be the url of the menu nav
+* The `weight` will determine how the manu navs are ordered in the navbar
+
+## Front Matter Dates
 
 If you don't set `publishdate` in your front matter, it will fallback to `date`. 
 
@@ -163,16 +225,32 @@ If you don't set `lastmod` in your front matter, and you have `enableGitInfo = f
 
 For more info see the hugo docs for [Configure Dates](https://gohugo.io/getting-started/configuration/#configure-dates). 
 
-### Shortcodes
+## Shortcodes
 
-TODO blockquote, relimg, absimg
+### `blockquote`
 
-To use it, pass the author's name as an argument, then within the shortcode put the quote: 
+This will format your blockquotes nicely. To use it, pass the author's name as an argument, then within the shortcode put the quote: 
 
 ```
 {{% blockquote "Laura Ingalls" %}}
 I am beginning to learn that it is the sweet, **simple** things of life which are the real ones after all.  
 {{% /blockquote %}}
+```
+
+### `imgAbs`
+
+This will insert an image into your content by absolute path. To use it, pass the `pathURL` of your image. The `alt` and `class` arguments are optional.
+
+```
+{{< imgAbs pathURL="img/some-img.png" alt="Some description" class="some-class" >}}
+```
+
+### `imgRel`
+
+This will insert an image into your content by relative path. To use it, pass the `pathURL` of your image. The `alt` and `class` arguments are optional.
+
+```
+{{< imgRel pathURL="img/some-img.png" alt="Some description" class="some-class" >}}
 ```
 
 ## Contribution

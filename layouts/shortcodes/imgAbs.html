@@ -1,0 +1,5 @@
+{{- $pathURL := .Get "pathURL" -}}
+{{- $alt := .Get "alt" -}}
+{{- $class := .Get "class" -}}
+
+<img src="{{ $pathURL | absURL }}" alt="{{ $alt }}" class="{{ $class }}">
