@@ -80,7 +80,7 @@ theme = "minimal-bootstrap-hugo-theme"
 enableGitInfo = false
 
 [params]
-description = "Your site description here"
+description = "Your site description"
 navbarBackgroundColor = "#000"
 wrapperMaxWidth = "780px"
 customDateFormat = "Monday, January 2, 2006"
@@ -127,7 +127,7 @@ enableGitInfo = false
 <br><br>
 
 ```
-description = "Your site description here"
+description = "Your site description"
 ```
 * Optional
 * If present, this will populate the `<meta>` description element
@@ -167,14 +167,14 @@ customDateFormat = "Monday, January 2, 2006"
 ```
 customCodeStyle = true
 ```
-* Optional (but recommended, so that your code snippets are formatted nicely)
+* Optional (but **recommended**, so that your code snippets are formatted nicely)
 * If set to true, this will use custom code styles
 <br><br>
 
 ```
 customBlockquoteStyle = true
 ```
-* Optional (but recommended, so that your blockquotes are formatted nicely)
+* Optional (but **recommended**, so that your blockquotes are formatted nicely)
 * If set to true, this will use custom blockquote styles
 <br><br>
 
@@ -200,7 +200,7 @@ tabIcon = "favicon.ico"
 * Optional
 * If present, your favicon will display as the tab icon
 * The value is the relative path to your favicon
-* It must have the extension of ".ico". To convert a ".jpg" or ".png" image to ".ico", see below link
+* It must have the extension of `.ico`. To convert a `.jpg` or `.png` image to `.ico`, see below link
 * <https://realfavicongenerator.net/>
 <br><br>
 
