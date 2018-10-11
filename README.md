@@ -11,11 +11,13 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
 * [Configuration](#configuration)
     * [Example config.toml](#example-configtoml)
     * [Config Options](#config-options)
+    * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
 * [Front Matter Dates](#front-matter-dates)
 * [Shortcodes](#shortcodes)
     * [blockquote](#blockquote)
     * [imgAbs](#imgabs)
     * [imgRel](#imgrel)
+* [Theme Override](#theme-override)
 * [Contribution](#contribution)
 
 ## Screenshot
@@ -204,6 +206,7 @@ faviconThemeColor = "#ffffff"
 * Optional
 * If present, these will set the favicon colors for various platforms
 * To generate these values, see the [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon) section and the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool
+<br><br>
 
 ```
 [menu]
@@ -218,11 +221,11 @@ weight = 1
 * The `url` will be the url of the menu nav
 * The `weight` will determine how the manu navs are ordered in the navbar
 
-## Favicon and Apple Touch Icon
+### Favicon and Apple Touch Icon
 
 Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under your `static/` folder. 
 
-To generate these icons (and additional icons for other platforms) from a single image file, use [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. 
+To generate these icons (and additional icons for other platforms) from a single image file, use the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. 
 
 ## Front Matter Dates
 
@@ -261,6 +264,14 @@ This will insert an image into your content by relative path. To use it, pass th
 ```
 {{< imgRel pathURL="img/some-img.png" alt="Some description" class="some-class" >}}
 ```
+
+## Theme Override
+
+As an example, let's say you didn't like the default theme navbar, and wanted to design one of your own. To do this, you would:
+
+1. Copy file `YOUR_SITE/themes/minimal-bootstrap-hugo-theme/layouts/partials/nav.html`
+1. Paste that file to `YOUR_SITE/layouts/partials/nav.html`
+1. Edit `nav.html` as desired
 
 ## Contribution
 
