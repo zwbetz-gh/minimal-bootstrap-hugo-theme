@@ -7,11 +7,11 @@
   {{ end }}
 
   {{ with .Site.Params.favicon }}
-  <link rel="icon" type="image/png" href="{{ . | absURL }}">
+  <link rel="icon" href="{{ . | absURL }}">
   {{ end }}
 
   {{ with .Site.Params.appleTouchIcon }}
-  <link rel="apple-touch-icon" href="{{ . | absURL }}">
+  <link rel="apple-touch-icon" type="image/png" href="{{ . | absURL }}">
   {{ end }}
 
   {{ $bootstrapCss := "css/bootstrap.min.css" }}

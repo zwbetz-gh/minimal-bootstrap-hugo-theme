@@ -88,7 +88,7 @@ customCodeStyle = true
 customBlockquoteStyle = true
 showPostSummary = false
 googleAnalytics = "UA-123456789-1"
-favicon = "favicon.png"
+favicon = "favicon.ico"
 appleTouchIcon = "apple-touch-icon.png"
 
 [menu]
@@ -196,12 +196,12 @@ googleAnalytics = "UA-123456789-1"
 <br><br>
 
 ```
-favicon = "favicon.png"
+favicon = "favicon.ico"
 ```
 * Optional
 * If present, your favicon will display as the tab icon
-* Put the favicon in the root of your site, i.e. put it under `static/favicon.png`
-* It must have the extension of `.png`. See below link for helpful online tool
+* Put the favicon in the root of your site, i.e. put it under `static/favicon.ico`
+* It must have the extension of `.ico`. See below link for favicon converter/generator tool
 * <https://realfavicongenerator.net/>
 <br><br>
 
@@ -211,7 +211,7 @@ appleTouchIcon = "apple-touch-icon.png"
 * Optional
 * If present, your apple touch icon will display when users bookmark your page
 * Put the apple touch icon in the root of your site, i.e. put it under `static/apple-touch-icon.png`
-* It must have the extension of `.png`. See below link for helpful online tool
+* It must have the extension of `.png`. See below link for apple touch icon converter/generator tool
 * <https://realfavicongenerator.net/>
 <br><br>
 
