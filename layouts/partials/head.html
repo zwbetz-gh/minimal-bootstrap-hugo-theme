@@ -6,13 +6,24 @@
   <meta name="description" content="{{ . }}">
   {{ end }}
 
-  {{ with .Site.Params.favicon }}
-  <link rel="icon" href="{{ . | absURL }}">
-  {{ end }}
+  {{ $appleTouchIcon := "apple-touch-icon.png" }}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ $appleTouchIcon | absURL }}">
 
-  {{ with .Site.Params.appleTouchIcon }}
-  <link rel="apple-touch-icon" type="image/png" href="{{ . | absURL }}">
-  {{ end }}
+  {{ $favicon32x32 := "favicon-32x32.png" }}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32x32 | absURL }}">
+
+  {{ $favicon16x16 := "favicon-16x16.png" }}
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16x16 | absURL }}">
+
+  {{ $siteWebmanifest := "site.webmanifest" }}
+  <link rel="manifest" href="/site.webmanifest">
+
+  {{ $safariPinnedTab := "safari-pinned-tab.svg" }}
+  <link rel="mask-icon" href="{{ $safariPinnedTab | absURL }}" color="{{ .Site.Params.faviconSafariPinnedTabColor }}">
+
+  <meta name="msapplication-TileColor" content="{{ .Site.Params.faviconMsApplicationTileColor }}">
+
+  <meta name="theme-color" content="{{ .Site.Params.faviconThemeColor }}">
 
   {{ $bootstrapCss := "css/bootstrap.min.css" }}
   <link rel="stylesheet" href="{{ $bootstrapCss | absURL }}" />

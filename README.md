@@ -88,8 +88,9 @@ customCodeStyle = true
 customBlockquoteStyle = true
 showPostSummary = false
 googleAnalytics = "UA-123456789-1"
-favicon = "favicon.ico"
-appleTouchIcon = "apple-touch-icon.png"
+faviconSafariPinnedTabColor = "#000000"
+faviconMsApplicationTileColor = "#da532c"
+faviconThemeColor = "#ffffff"
 
 [menu]
 [[menu.nav]]
@@ -196,24 +197,13 @@ googleAnalytics = "UA-123456789-1"
 <br><br>
 
 ```
-favicon = "favicon.ico"
+faviconSafariPinnedTabColor = "#000000"
+faviconMsApplicationTileColor = "#da532c"
+faviconThemeColor = "#ffffff"
 ```
 * Optional
-* If present, your favicon will display as the tab icon
-* Put the favicon in the root of your site, i.e. put it under `static/favicon.ico`
-* It must have the extension of `.ico`. See below link for favicon converter/generator tool
-* <https://realfavicongenerator.net/>
-<br><br>
-
-```
-appleTouchIcon = "apple-touch-icon.png"
-```
-* Optional
-* If present, your apple touch icon will display when users bookmark your page
-* Put the apple touch icon in the root of your site, i.e. put it under `static/apple-touch-icon.png`
-* It must have the extension of `.png`. See below link for apple touch icon converter/generator tool
-* <https://realfavicongenerator.net/>
-<br><br>
+* If present, these will set the favicon colors for various platforms
+* To generate these values, see the [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon) section and the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool
 
 ```
 [menu]
@@ -227,6 +217,12 @@ weight = 1
 * The `name` is what will display in the navbar
 * The `url` will be the url of the menu nav
 * The `weight` will determine how the manu navs are ordered in the navbar
+
+## Favicon and Apple Touch Icon
+
+Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under your `static/` folder. 
+
+To generate these icons (and additional icons for other platforms) from a single image file, use [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. 
 
 ## Front Matter Dates
 
