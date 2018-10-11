@@ -24,7 +24,7 @@ TODO take
 
 ## Theme Installation Options
 
-1. Add it as a git submodule (this requires your site to already be in a git repo)
+1. Add it as a git submodule. (This requires that your site already be in a git repo. This is the **recommended** installation option since the parent/child repos will be handled correctly when deploying your site)
     1. `cd YOUR_SITE`
     1. `mkdir themes`
     1. `git submodule add https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git themes/minimal-bootstrap-hugo-theme`
