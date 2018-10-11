@@ -5,8 +5,8 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
 ## Table of Contents
 
 * [Screenshot](#screenshot)
-* [Theme Installation Options](#theme-installation-options)
-* [Theme Update Options](#theme-update-options)
+* [Installation Options](#installation-options)
+* [Update Options](#update-options)
 * [Site Layout](#site-layout)
 * [Configuration](#configuration)
     * [Example config.toml](#example-configtoml)
@@ -17,14 +17,14 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
     * [blockquote](#blockquote)
     * [imgAbs](#imgabs)
     * [imgRel](#imgrel)
-* [Theme Override](#theme-override)
+* [Override](#override)
 * [Contribution](#contribution)
 
 ## Screenshot
 
 TODO take
 
-## Theme Installation Options
+## Installation Options
 
 1. Add it as a git submodule. (This requires that your site already be in a git repo. This is the **recommended** installation option since the parent/child repos will be handled correctly when deploying your site)
     1. `cd YOUR_SITE`
@@ -45,7 +45,7 @@ Once installed, add this line to your `config.toml`:
 theme = "minimal-bootstrap-hugo-theme"
 ```
 
-## Theme Update Options
+## Update Options
 
 If you used one of the git options to install the theme, update it by running:
 
@@ -265,7 +265,7 @@ This will insert an image into your content by relative path. To use it, pass th
 {{< imgRel pathURL="img/some-img.png" alt="Some description" class="some-class" >}}
 ```
 
-## Theme Override
+## Override
 
 As an example, let's say you didn't like the default theme navbar, and wanted to design one of your own. To do this, you would:
 
