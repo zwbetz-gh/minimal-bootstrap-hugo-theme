@@ -88,7 +88,8 @@ customCodeStyle = true
 customBlockquoteStyle = true
 showPostSummary = false
 googleAnalytics = "UA-123456789-1"
-tabIcon = "favicon.ico"
+tabIcon = "icon/favicon.png"
+appleTouchIcon = "icon/apple-touch-icon.png"
 
 [menu]
 [[menu.nav]]
@@ -195,12 +196,20 @@ googleAnalytics = "UA-123456789-1"
 <br><br>
 
 ```
-tabIcon = "favicon.ico"
+tabIcon = "icon/favicon.png"
 ```
 * Optional
 * If present, your favicon will display as the tab icon
-* The value is the relative path to your favicon
-* It must have the extension of `.ico`. To convert a `.jpg` or `.png` image to `.ico`, see below link
+* It must have the extension of `.png`. See below link for helpful online tool
+* <https://realfavicongenerator.net/>
+<br><br>
+
+```
+appleTouchIcon = "icon/apple-touch-icon.png"
+```
+* Optional
+* If present, your apple touch icon will display when users bookmark your page
+* It must have the extension of `.png`. See below link for helpful online tool
 * <https://realfavicongenerator.net/>
 <br><br>
 
