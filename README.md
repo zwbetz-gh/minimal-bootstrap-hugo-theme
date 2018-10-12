@@ -22,7 +22,7 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
 
 ## Screenshot
 
-TODO take
+TODO link to screenshot by absolute path 
 
 ## Installation Options
 
@@ -59,58 +59,56 @@ If you downloaded a zip to install the theme, just do those installation steps a
 This theme expects your _posts_ to be under the `post/` folder.
 
 ```
+│   config.toml
 ├───content/
 │   │   about.md
-│   │   contact.md
 │   └───post/
 │           creating-a-new-theme.md
 │           goisforlovers.md
 │           hugoisforlovers.md
 │           migrate-from-jekyll.md
-│           simple-pleasures.md
 ```
 ## Configuration
 
 ### Example `config.toml`
 
 ```toml
-baseurl = "https://example.org/"
-title = "Site Title"
-author = "Your Name"
+baseURL = "https://example.com"
 languageCode = "en-us"
+title = "Some Title"
 theme = "minimal-bootstrap-hugo-theme"
 enableGitInfo = false
 
+[permalinks]
+  post = "/:filename/"
+
 [params]
-description = "Your site description"
-navbarBackgroundColor = "#000"
-wrapperMaxWidth = "780px"
-customDateFormat = "Monday, January 2, 2006"
-customCodeStyle = true
-customBlockquoteStyle = true
-showPostSummary = false
-googleAnalytics = "UA-123456789-1"
-faviconSafariPinnedTabColor = "#000000"
-faviconMsApplicationTileColor = "#da532c"
-faviconThemeColor = "#ffffff"
+  description = "Some description"
+  navbarBackgroundColor = "#000"
+  wrapperMaxWidth = "780px"
+  customDateFormat = "Monday, January 2, 2006"
+  customCodeStyle = true
+  customBlockquoteStyle = true
+  showPostSummary = false
+  googleAnalytics = "UA-123456789-1"
+
+  faviconSafariPinnedTabColor = "#5bbad5"
+  faviconMsApplicationTileColor = "#da532c"
+  faviconThemeColor = "#ffffff"
 
 [menu]
-[[menu.nav]]
-name = "Posts"
-url = "/"
-weight = 1
-[[menu.nav]]
-name = "About"
-url = "/about/"
-weight = 2
-[[menu.nav]]
-name = "Contact"
-url = "/contact/"
-weight = 3
-[[menu.nav]]
-name = "Random Page"
-url = "/random-page/"
-weight = 4
+  [[menu.nav]]
+  name = "Posts"
+  url = "/"
+  weight = 1
+  [[menu.nav]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+  [[menu.nav]]
+  name = "Some Page"
+  url = "#"
+  weight = 3
 ```
 
 ### Config Options
@@ -210,10 +208,10 @@ faviconThemeColor = "#ffffff"
 
 ```
 [menu]
-[[menu.nav]]
-name = "Posts"
-url = "/"
-weight = 1
+  [[menu.nav]]
+  name = "Posts"
+  url = "/"
+  weight = 1
 ```
 * **Required**
 * At least one menu nav is required
@@ -223,9 +221,9 @@ weight = 1
 
 ### Favicon and Apple Touch Icon
 
-Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under your `static/` folder. 
+Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under your `static/` folder. See `exampleSite/static/` for other additional (optional) favicon files.
 
-To generate these icons (and additional icons for other platforms) from a single image file, use the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. 
+To generate all these favicons from a single image, use the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. 
 
 ## Front Matter Dates
 
