@@ -2,6 +2,8 @@
 
 A minimal hugo theme made with bootstrap that focuses on content readability.
 
+The typical page size (if the page has no images) is under 100kb. The only other assets loaded besides your actual page content are: your Bootstrap CSS, your favicon (if enabled), and google analytics (if enabled).  
+
 ## Table of Contents
 
 * [Screenshot](#screenshot)
@@ -26,18 +28,13 @@ TODO link to screenshot by absolute path
 
 ## Installation Options
 
-1. Add it as a git submodule. (This requires that your site already be in a git repo. This is the **recommended** installation option since the parent/child repos will be handled correctly when deploying your site)
+1. Add it as a git submodule. (This requires that your site already be in a git repo. This is the **recommended** installation option since the your site repo (and the theme submodule within) will be handled correctly when deploying your site)
     1. `cd YOUR_SITE`
     1. `mkdir themes`
     1. `git submodule add https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git themes/minimal-bootstrap-hugo-theme`
-1. Add it by using git clone
-    1. `cd YOUR_SITE`
-    1. `mkdir themes`
-    1. `cd themes`
-    1. `git clone https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git`
 1. Download a zip and unzip it
     1. [Download the theme from GitHub](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/archive/master.zip)
-    1. Unzip it into the `themes/` folder
+    1. Unzip it into your `YOUR_SITE/themes/` folder
 
 Once installed, add this line to your `config.toml`:
 
@@ -47,12 +44,12 @@ theme = "minimal-bootstrap-hugo-theme"
 
 ## Update Options
 
-If you used one of the git options to install the theme, update it by running:
+If you used the git submodule option to install the theme, update it by running:
 
-1. `cd YOUR_SITE/themes/minimal-bootstrap-hugo-theme`
-1. `git pull`
+1. `cd YOUR_SITE`
+1. `git submodule foreach git pull`
 
-If you downloaded a zip to install the theme, just do those installation steps again.
+If you downloaded a zip to install the theme, just do those installation steps again to update it.
 
 ## Site Layout
 
