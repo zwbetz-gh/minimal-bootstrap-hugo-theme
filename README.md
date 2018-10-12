@@ -205,7 +205,7 @@ faviconThemeColor = "#ffffff"
 ```
 * Optional
 * If present, these will set the favicon colors for various platforms
-* To generate these values, see the [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon) section and the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool
+* To generate these values, see the [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon) section
 <br><br>
 
 ```
