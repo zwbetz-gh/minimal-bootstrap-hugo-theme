@@ -68,6 +68,9 @@ This theme expects your _posts_ to be under the `post/` folder.
 │           hugoisforlovers.md
 │           migrate-from-jekyll.md
 ```
+
+Also see the `exampleSite/`.
+
 ## Configuration
 
 ### Example `config.toml`
@@ -221,9 +224,9 @@ faviconThemeColor = "#ffffff"
 
 ### Favicon and Apple Touch Icon
 
-Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under your `static/` folder. See `exampleSite/static/` for other additional (optional) favicon files.
+Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under your `static/` folder. See `exampleSite/static/` for other (optional) favicon files.
 
-To generate all these favicons from a single image, use the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. 
+To generate all these favicons from a single image, use the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. After using the tool, you'll be prompted to download a zip of your favicon package. You'll then want to extract the zip contents directly into `exampleSite/static/`. 
 
 ## Front Matter Dates
 
