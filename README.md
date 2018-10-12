@@ -2,7 +2,7 @@
 
 A minimal hugo theme made with bootstrap that focuses on content readability.
 
-The typical page size (if the page has no images) is under 100kb. The only other assets loaded besides your actual HTML page are: the Bootstrap CSS, your favicon (if enabled), and Google Analytics (if enabled).  
+The typical page size (if the page has no images) is under 200kb. The only other assets loaded besides your actual HTML page are: the Bootstrap CSS, your favicon (if enabled), and Google Analytics (if enabled).  
 
 ## Table of Contents
 
