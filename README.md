@@ -255,18 +255,18 @@ I am beginning to learn that it is the sweet, **simple** things of life which ar
 
 ### `imgAbs`
 
-This will insert an image into your content by absolute path. To use it, pass the `pathURL` of your image. The `alt` and `class` arguments are optional.
+This will insert an image into your content by absolute path. To use it, pass the `pathURL` of your image. These arguments are optional: `alt`, `class`, `style`.
 
 ```
-{{< imgAbs pathURL="img/some-img.png" alt="Some description" class="some-class" >}}
+{{< imgAbs pathURL="img/some-img.png" alt="Some description" class="some-class" style="some-style" >}}
 ```
 
 ### `imgRel`
 
-This will insert an image into your content by relative path. To use it, pass the `pathURL` of your image. The `alt` and `class` arguments are optional.
+This will insert an image into your content by relative path. To use it, pass the `pathURL` of your image. These arguments are optional: `alt`, `class`, `style`.
 
 ```
-{{< imgRel pathURL="img/some-img.png" alt="Some description" class="some-class" >}}
+{{< imgRel pathURL="img/some-img.png" alt="Some description" class="some-class" style="some-style" >}}
 ```
 
 ## Override
