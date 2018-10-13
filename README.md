@@ -245,10 +245,10 @@ For a deeper dive see the hugo docs for [Configure Dates](https://gohugo.io/gett
 
 ### `blockquote`
 
-This will format your blockquotes nicely. To use it, put the quote within the shortcode. Supplying the author's name is optional.
+This will format your blockquotes nicely. To use it, put the quote within the shortcode. The `author` argument is optional.
 
 ```
-{{% blockquote "Laura Ingalls" %}}
+{{% blockquote author="Laura Ingalls" %}}
 I am beginning to learn that it is the sweet, **simple** things of life which are the real ones after all.  
 {{% /blockquote %}}
 ```
