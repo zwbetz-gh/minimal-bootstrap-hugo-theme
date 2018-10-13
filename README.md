@@ -245,7 +245,7 @@ For a deeper dive see the hugo docs for [Configure Dates](https://gohugo.io/gett
 
 ### `blockquote`
 
-This will format your blockquotes nicely. To use it, pass the author's name as an argument, then within the shortcode put the quote: 
+This will format your blockquotes nicely. To use it, put the quote within the shortcode. Supplying the author's name is optional.
 
 ```
 {{% blockquote "Laura Ingalls" %}}
