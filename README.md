@@ -34,7 +34,7 @@ TODO link to screenshot by absolute path
     1. `cd YOUR_SITE`
     1. `git submodule add https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git themes/minimal-bootstrap-hugo-theme`
 1. Download a zip and unzip it
-    1. [Download the theme from GitHub](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/archive/master.zip)
+    1. [Download a zip of the theme from GitHub](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/archive/master.zip)
     1. Unzip it into `YOUR_SITE/themes/`
 
 Once installed, add this line to your `config.toml`:
