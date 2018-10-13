@@ -3,4 +3,4 @@
 {{- $class := .Get "class" -}}
 {{- $style := .Get "style" -}}
 
-<img src="{{ $pathURL | absURL }}" alt="{{ $alt }}" class="{{ $class }}" style="{{ $style }}">
+<img src="{{ $pathURL | absURL }}" alt="{{ $alt }}" class="{{ $class }}" style="{{ $style | safeCSS }}">
