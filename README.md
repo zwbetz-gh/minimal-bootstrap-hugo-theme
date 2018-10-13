@@ -15,6 +15,8 @@ The typical page size (if the page has no images) is under 200kb. The only other
     * [Config Options](#config-options)
     * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
 * [Front Matter Dates](#front-matter-dates)
+    * [publishdate](#publishdate)
+    * [lastmod](#lastmod)
 * [Shortcodes](#shortcodes)
     * [blockquote](#blockquote)
     * [imgAbs](#imgabs)
