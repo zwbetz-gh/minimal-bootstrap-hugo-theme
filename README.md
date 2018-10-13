@@ -48,7 +48,7 @@ theme = "minimal-bootstrap-hugo-theme"
 If you used the git submodule option to install the theme, update it by running:
 
 1. `cd YOUR_SITE`
-1. `git submodule foreach git pull`
+1. `git submodule foreach git pull origin master`
 
 If you downloaded a zip to install the theme, just do those installation steps again to update it.
 
