@@ -28,13 +28,12 @@ TODO link to screenshot by absolute path
 
 ## Installation Options
 
-1. Add it as a git submodule. (This requires that your site already be in a git repo. This is the **recommended** installation option since the your site repo (and the theme submodule within) will be handled correctly when deploying your site)
+1. Add it as a git submodule
     1. `cd YOUR_SITE`
-    1. `mkdir themes`
     1. `git submodule add https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git themes/minimal-bootstrap-hugo-theme`
 1. Download a zip and unzip it
     1. [Download the theme from GitHub](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/archive/master.zip)
-    1. Unzip it into your `YOUR_SITE/themes/` folder
+    1. Unzip it into `YOUR_SITE/themes/`
 
 Once installed, add this line to your `config.toml`:
 
@@ -126,6 +125,7 @@ enableGitInfo = false
 * Optional
 * If set to true, `lastmod` date will be git's last revision of the file
 * If set to false, `lastmod` date will pull from front matter
+* See [Front Matter Dates](#front-matter-dates) for more info
 <br><br>
 
 ```
@@ -203,7 +203,7 @@ faviconThemeColor = "#ffffff"
 ```
 * Optional
 * If present, these will set the favicon colors for various platforms
-* To generate these values, see the [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon) section
+* To generate these values, see [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
 <br><br>
 
 ```
@@ -221,19 +221,23 @@ faviconThemeColor = "#ffffff"
 
 ### Favicon and Apple Touch Icon
 
-Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under your `YOUR_SITE/static/` folder. See `exampleSite/static/` for other (optional) favicon files.
+Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under `YOUR_SITE/static/`. See `exampleSite/static/` for other (optional) favicon files.
 
 To generate all these favicons from a single image, use the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. After using the tool, you'll be prompted to download a zip of your favicon package. You'll then want to extract the zip contents directly into `YOUR_SITE/static/`. 
 
 ## Front Matter Dates
 
+### `publishdate`
+
 If you don't set `publishdate` in your front matter, it will fallback to `date`. 
 
-If you don't set `lastmod` in your front matter, but you have `enableGitInfo = true` in your `config.toml`, then `lastmod` date will the git's last revision of the file.
+### `lastmod`
 
-If you don't set `lastmod` in your front matter, and you have `enableGitInfo = false` (or don't have that line at all) in your `config.toml`, then `lastmod` date will fallback to `date`. 
+If you have `enableGitInfo = true` in your `config.toml`, then `lastmod` date will be git's last revision of the file.
 
-For more info see the hugo docs for [Configure Dates](https://gohugo.io/getting-started/configuration/#configure-dates). 
+If you have `enableGitInfo = false` (or don't have that line at all) in your `config.toml`, then `lastmod` date will be the `lastmod` value in your front matter. If you don't have `lastmod` in your front matter, it will fallback to `date`. 
+
+For a deeper dive see the hugo docs for [Configure Dates](https://gohugo.io/getting-started/configuration/#configure-dates). 
 
 ## Shortcodes
 
