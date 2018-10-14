@@ -4,6 +4,10 @@ title = "Some Title"
 theme = "minimal-bootstrap-hugo-theme"
 enableGitInfo = false
 
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "pygments"
+
 [permalinks]
   post = "/:filename/"
 
