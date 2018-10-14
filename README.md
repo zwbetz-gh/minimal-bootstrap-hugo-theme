@@ -17,10 +17,10 @@ The typical page size (if the page has no images) is under 200kb. The only other
     * [Description](#description)
     * [Navbar Background Color](#navbar-background-color)
     * [Wrapper Max Width](#wrapper-max-width)
-    * [Custom Date Format](#custom-date-format)
-    * [Custom Code Style](#custom-code-style)
-    * [Custom Blockquote Style](#custom-blockquote-style)
-    * [Show Post Summary](#show-post-summary)
+    * [Date Format](#date-format)
+    * [Code Style](#code-style)
+    * [Blockquote Style](#blockquote-style)
+    * [Post Summary](#post-summary)
     * [Google Analytics](#google-analytics)
     * [Favicon Colors on Various Platforms](#favicon-colors-on-various-platforms)
     * [Menu Nav](#menu-nav)
@@ -173,7 +173,7 @@ wrapperMaxWidth = "780px"
 * If present, this will set the max width of the navbar and page content
 * If not present, the default max width is `"800px"`
 
-### Custom Date Format
+### Date Format
 
 ```
 customDateFormat = "Monday, January 2, 2006"
@@ -184,7 +184,7 @@ customDateFormat = "Monday, January 2, 2006"
 * See below hugo docs link for a list of valid date formats 
 * <https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference>
 
-### Custom Code Style
+### Code Style
 
 ```
 customCodeStyle = true
@@ -192,7 +192,7 @@ customCodeStyle = true
 * Optional (but **recommended**, so that your code snippets are formatted nicely)
 * If set to true, this will use custom code styles
 
-### Custom Blockquote Style
+### Blockquote Style
 
 ```
 customBlockquoteStyle = true
@@ -201,7 +201,7 @@ customBlockquoteStyle = true
 * If set to true, this will use custom blockquote styles
 * See [blockquote](#blockquote)
 
-### Show Post Summary
+### Post Summary
 
 ```
 showPostSummary = false
