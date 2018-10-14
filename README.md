@@ -268,7 +268,7 @@ pygmentsStyle = "pygments"
 
 Here, `"pygments"` is just the name of the Chroma style to be used. Checkout the [Chroma style gallery](https://xyproto.github.io/splash/docs/all.html) and choose the style you like. 
 
-For a depper dive see the [hugo docs for syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
+For a deeper dive see the [hugo docs for syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
 
 ## Front Matter Dates
 
