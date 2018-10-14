@@ -20,6 +20,7 @@ pygmentsStyle = "pygments"
   customBlockquoteStyle = true
   showPostSummary = false
   googleAnalytics = "UA-123456789-1"
+  cookieConsent = true
 
   faviconSafariPinnedTabColor = "#5bbad5"
   faviconMsApplicationTileColor = "#da532c"

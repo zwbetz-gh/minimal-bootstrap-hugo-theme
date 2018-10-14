@@ -22,10 +22,13 @@ The typical page size (if the page has no images) is under 200kb. The only other
     * [Blockquote Style](#blockquote-style)
     * [Post Summary](#post-summary)
     * [Google Analytics](#google-analytics)
+    * [Cookie Consent](#cookie-consent)
     * [Favicon Colors on Various Platforms](#favicon-colors-on-various-platforms)
     * [Menu Nav](#menu-nav)
 * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
 * [Override](#override)
+    * [Navbar Example](#navbar-example)
+    * [Cookie Consent](#cookie-consent-1)
 * [Syntax Highlighting](#syntax-highlighting)
 * [Front Matter Dates](#front-matter-dates)
     * [publishdate](#publishdate)
@@ -106,6 +109,7 @@ pygmentsStyle = "pygments"
   customBlockquoteStyle = true
   showPostSummary = false
   googleAnalytics = "UA-123456789-1"
+  cookieConsent = true
 
   faviconSafariPinnedTabColor = "#5bbad5"
   faviconMsApplicationTileColor = "#da532c"
@@ -142,8 +146,8 @@ theme = "minimal-bootstrap-hugo-theme"
 enableGitInfo = false
 ```
 * Optional
-* If set to true, `lastmod` date will be git's last revision of the file
-* If set to false, `lastmod` date will pull from front matter
+* If set to `true`, `lastmod` date will be git's last revision of the file
+* If set to `false`, `lastmod` date will pull from front matter
 * See [Front Matter Dates](#front-matter-dates) for more info
 
 ### Description
@@ -193,7 +197,7 @@ customDateFormat = "Monday, January 2, 2006"
 customCodeStyle = true
 ```
 * Optional (but **recommended**, so that your code snippets are formatted nicely)
-* If set to true, this will use custom code styles
+* If set to `true`, this will use custom code styles
 
 ### Blockquote Style
 
@@ -201,7 +205,7 @@ customCodeStyle = true
 customBlockquoteStyle = true
 ```
 * Optional (but **recommended**, so that your blockquotes are formatted nicely)
-* If set to true, this will use custom blockquote styles
+* If set to `true`, this will use custom blockquote styles
 * See [blockquote](#blockquote)
 
 ### Post Summary
@@ -210,7 +214,7 @@ customBlockquoteStyle = true
 showPostSummary = false
 ```
 * Optional
-* If set to true, this will show a summary for each post on the homepage
+* If set to `true`, this will show a summary for each post on the homepage
 * For how many words to show in the summary, where to cut it off, etc., see [hugo docs for summaries](https://gohugo.io/content-management/summaries/)
 
 ### Google Analytics
@@ -220,6 +224,15 @@ googleAnalytics = "UA-123456789-1"
 ```
 * Optional
 * If present, Google Analytics will be enabled
+
+### Cookie Consent
+
+```
+cookieConsent = true
+```
+* Optional
+* If set to `true`, this will show a cookie consent popup in order to be compliant with GDPR
+* To configure the look and feel of the popup, see TODO
 
 ### Favicon Colors on Various Platforms
 
@@ -255,11 +268,22 @@ To generate all these favicons from a single image, use the [RealFaviconGenerato
 
 ## Override
 
+### Navbar Example
+
 As an example, let's say you didn't like the default theme navbar, and wanted to design one of your own. To do this, you would:
 
 1. Copy file `YOUR_SITE/themes/minimal-bootstrap-hugo-theme/layouts/partials/nav.html`
 1. Paste that file to `YOUR_SITE/layouts/partials/nav.html`
 1. Edit `nav.html` as desired
+
+### Cookie Consent
+
+You can change the banner color, banner text color, button color, and button text color of the cookie consent popup. To do this, you would:
+
+1. Copy file `YOUR_SITE/themes/minimal-bootstrap-hugo-theme/layouts/partials/cookie-consent.html`
+1. Paste that file to `YOUR_SITE/layouts/partials/cookie-consent.html`
+1. Complete the [cookie consent wizard](https://cookieconsent.insites.com/download/)
+1. Paste the generated code from the wizard into `cookie-consent.html`
 
 ## Syntax Highlighting
 
