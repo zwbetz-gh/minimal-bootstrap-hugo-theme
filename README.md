@@ -181,8 +181,7 @@ customDateFormat = "Monday, January 2, 2006"
 * Optional
 * If present, this will set the date format on your homepage and posts
 * If not present, the default date format is `"January 2, 2006"`
-* See below hugo docs link for a list of valid date formats 
-* <https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference>
+* See the [hugo docs for a list of valid date formats](https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference)
 
 ### Code Style
 
@@ -208,8 +207,7 @@ showPostSummary = false
 ```
 * Optional
 * If set to true, this will show a summary for each post on the homepage
-* For how many words to show in the summary, where to cut it off, etc., see below hugo docs link
-* <https://gohugo.io/content-management/summaries/>
+* For how many words to show in the summary, where to cut it off, etc., see [hugo docs for summaries](https://gohugo.io/content-management/summaries/)
 
 ### Google Analytics
 
@@ -270,7 +268,7 @@ pygmentsStyle = "pygments"
 
 Here, `"pygments"` is just the name of the Chroma style to be used. Checkout the [Chroma style gallery](https://xyproto.github.io/splash/docs/all.html) and choose the style you like. 
 
-For a depper dive see the hugo docs for [syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
+For a depper dive see the [hugo docs for syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
 
 ## Front Matter Dates
 
@@ -284,7 +282,7 @@ If you have `enableGitInfo = true` in your `config.toml`, then `lastmod` date wi
 
 If you have `enableGitInfo = false` (or don't have that line at all) in your `config.toml`, then `lastmod` date will be the `lastmod` value in your front matter. If you don't have `lastmod` in your front matter, it will fallback to `date`. 
 
-For a deeper dive see the hugo docs for [configure dates](https://gohugo.io/getting-started/configuration/#configure-dates). 
+For a deeper dive see the [hugo docs for configure dates](https://gohugo.io/getting-started/configuration/#configure-dates). 
 
 ## Shortcodes
 
