@@ -28,7 +28,7 @@ The typical page size (if the page has no images) is under 200kb. The only other
 * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
 * [Override](#override)
     * [Navbar Example](#navbar-example)
-    * [Cookie Consent](#cookie-consent-1)
+    * [Configure Cookie Consent](#configure-cookie-consent)
 * [Syntax Highlighting](#syntax-highlighting)
 * [Front Matter Dates](#front-matter-dates)
     * [publishdate](#publishdate)
@@ -232,7 +232,7 @@ cookieConsent = true
 ```
 * Optional
 * If set to `true`, this will show a cookie consent popup in order to be compliant with GDPR
-* To configure the look and feel of the popup, see TODO
+* To configure the cookie consent popup see [Configure Cookie Consent](#configure-cookie-consent)
 
 ### Favicon Colors on Various Platforms
 
@@ -276,9 +276,9 @@ As an example, let's say you didn't like the default theme navbar, and wanted to
 1. Paste that file to `YOUR_SITE/layouts/partials/nav.html`
 1. Edit `nav.html` as desired
 
-### Cookie Consent
+### Configure Cookie Consent
 
-You can change the banner color, banner text color, button color, and button text color of the cookie consent popup. To do this, you would:
+You can change the position, layout, color palette, "Learn more" link, compliance type, and custom text of the cookie consent popup. To do this, you would:
 
 1. Copy file `YOUR_SITE/themes/minimal-bootstrap-hugo-theme/layouts/partials/cookie-consent.html`
 1. Paste that file to `YOUR_SITE/layouts/partials/cookie-consent.html`
