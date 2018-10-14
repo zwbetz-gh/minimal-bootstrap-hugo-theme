@@ -10,10 +10,22 @@ The typical page size (if the page has no images) is under 200kb. The only other
 * [Installation Options](#installation-options)
 * [Update Options](#update-options)
 * [Site Layout](#site-layout)
-* [Configuration](#configuration)
-    * [Example config.toml](#example-configtoml)
-    * [Config Options](#config-options)
-    * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
+* [Example config.toml](#example-configtoml)
+* [config.toml Options](#configtoml-options)
+    * [Theme](#theme)
+    * [Enable Git Info](#enable-git-info)
+    * [Description](#description)
+    * [Navbar Background Color](#navbar-background-color)
+    * [Wrapper Max Width](#wrapper-max-width)
+    * [Custom Date Format](#custom-date-format)
+    * [Custom Code Style](#custom-code-style)
+    * [Custom Blockquote Style](#custom-blockquote-style)
+    * [Show Post Summary](#show-post-summary)
+    * [Google Analytics](#google-analytics)
+    * [Favicon Colors on Various Platforms](#favicon-colors-on-various-platforms)
+    * [Menu Nav](#menu-nav)
+* [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
+* [Override](#override)
 * [Front Matter Dates](#front-matter-dates)
     * [publishdate](#publishdate)
     * [lastmod](#lastmod)
@@ -21,7 +33,6 @@ The typical page size (if the page has no images) is under 200kb. The only other
     * [blockquote](#blockquote)
     * [imgAbs](#imgabs)
     * [imgRel](#imgrel)
-* [Override](#override)
 * [Contribution](#contribution)
 
 ## Screenshot
@@ -69,9 +80,7 @@ This theme expects your _posts_ to be under the `post/` folder.
 
 Also see the `exampleSite/`.
 
-## Configuration
-
-### Example `config.toml`
+## Example `config.toml`
 
 ```toml
 baseURL = "https://example.com"
@@ -112,14 +121,17 @@ enableGitInfo = false
   weight = 3
 ```
 
-### Config Options
+## config.toml Options
+
+### Theme
 
 ```
 theme = "minimal-bootstrap-hugo-theme"
 ```
 * **Required**
 * Set your site's theme
-<br><br>
+
+### Enable Git Info
 
 ```
 enableGitInfo = false
@@ -128,14 +140,16 @@ enableGitInfo = false
 * If set to true, `lastmod` date will be git's last revision of the file
 * If set to false, `lastmod` date will pull from front matter
 * See [Front Matter Dates](#front-matter-dates) for more info
-<br><br>
+
+### Description
 
 ```
 description = "Your site description"
 ```
 * Optional
 * If present, this will populate the `<meta>` description element
-<br><br>
+
+### Navbar Background Color
 
 ```
 navbarBackgroundColor = "#000"
@@ -148,7 +162,8 @@ navbarBackgroundColor = "#000"
     * rgb: `"rgb(0,0,0)"`
     * rgba: `"rgba(0,0,0,1)"`
     * name: `"black"`
-<br><br>
+
+### Wrapper Max Width
 
 ```
 wrapperMaxWidth = "780px"
@@ -156,7 +171,8 @@ wrapperMaxWidth = "780px"
 * Optional
 * If present, this will set the max width of the navbar and page content
 * If not present, the default max width is `"800px"`
-<br><br>
+
+### Custom Date Format
 
 ```
 customDateFormat = "Monday, January 2, 2006"
@@ -166,21 +182,25 @@ customDateFormat = "Monday, January 2, 2006"
 * If not present, the default date format is `"January 2, 2006"`
 * See below hugo docs link for a list of valid date formats 
 * <https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference>
-<br><br>
+
+### Custom Code Style
 
 ```
 customCodeStyle = true
 ```
 * Optional (but **recommended**, so that your code snippets are formatted nicely)
 * If set to true, this will use custom code styles
-<br><br>
+
+### Custom Blockquote Style
 
 ```
 customBlockquoteStyle = true
 ```
 * Optional (but **recommended**, so that your blockquotes are formatted nicely)
 * If set to true, this will use custom blockquote styles
-<br><br>
+* See [blockquote](#blockquote)
+
+### Show Post Summary
 
 ```
 showPostSummary = false
@@ -189,14 +209,16 @@ showPostSummary = false
 * If set to true, this will show a summary for each post on the homepage
 * For how many words to show in the summary, where to cut it off, etc., see below hugo docs link
 * <https://gohugo.io/content-management/summaries/>
-<br><br>
+
+### Google Analytics
 
 ```
 googleAnalytics = "UA-123456789-1"
 ```
 * Optional
 * If present, Google Analytics will be enabled
-<br><br>
+
+### Favicon Colors on Various Platforms
 
 ```
 faviconSafariPinnedTabColor = "#000000"
@@ -206,7 +228,8 @@ faviconThemeColor = "#ffffff"
 * Optional
 * If present, these will set the favicon colors for various platforms
 * To generate these values, see [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
-<br><br>
+
+### Menu Nav
 
 ```
 [menu]
@@ -221,11 +244,32 @@ faviconThemeColor = "#ffffff"
 * The `url` will be the url of the menu nav
 * The `weight` will determine how the manu navs are ordered in the navbar
 
-### Favicon and Apple Touch Icon
+## Favicon and Apple Touch Icon
 
 Place your `favicon.ico` and `apple-touch-icon.png` files at the root of your site, i.e. place them directly under `YOUR_SITE/static/`. See `exampleSite/static/` for other (optional) favicon files.
 
 To generate all these favicons from a single image, use the [RealFaviconGenerator](https://realfavicongenerator.net/) online tool. After using the tool, you'll be prompted to download a zip of your favicon package. You'll then want to extract the zip contents directly into `YOUR_SITE/static/`. 
+
+## Override
+
+As an example, let's say you didn't like the default theme navbar, and wanted to design one of your own. To do this, you would:
+
+1. Copy file `YOUR_SITE/themes/minimal-bootstrap-hugo-theme/layouts/partials/nav.html`
+1. Paste that file to `YOUR_SITE/layouts/partials/nav.html`
+1. Edit `nav.html` as desired
+
+## Syntax Highlighting
+
+Hugo has built-in syntax highlighting, provided by Chroma. To use it, add these lines to your `config.toml`:
+
+```
+pygmentsCodefences = true
+pygmentsStyle = "pygments"
+```
+
+Here, `"pygments"` is just the name of the Chroma style to be used. Checkout the [Chroma style gallery](https://xyproto.github.io/splash/docs/all.html) and choose the style you like. 
+
+For a depper dive see the hugo docs for [syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
 
 ## Front Matter Dates
 
@@ -239,7 +283,7 @@ If you have `enableGitInfo = true` in your `config.toml`, then `lastmod` date wi
 
 If you have `enableGitInfo = false` (or don't have that line at all) in your `config.toml`, then `lastmod` date will be the `lastmod` value in your front matter. If you don't have `lastmod` in your front matter, it will fallback to `date`. 
 
-For a deeper dive see the hugo docs for [Configure Dates](https://gohugo.io/getting-started/configuration/#configure-dates). 
+For a deeper dive see the hugo docs for [configure dates](https://gohugo.io/getting-started/configuration/#configure-dates). 
 
 ## Shortcodes
 
@@ -268,14 +312,6 @@ This will insert an image into your content by relative path. To use it, pass th
 ```
 {{< imgRel pathURL="img/some-img.png" alt="Some description" class="some-class" style="some-style" >}}
 ```
-
-## Override
-
-As an example, let's say you didn't like the default theme navbar, and wanted to design one of your own. To do this, you would:
-
-1. Copy file `YOUR_SITE/themes/minimal-bootstrap-hugo-theme/layouts/partials/nav.html`
-1. Paste that file to `YOUR_SITE/layouts/partials/nav.html`
-1. Edit `nav.html` as desired
 
 ## Contribution
 
