@@ -1,0 +1,6 @@
+{{ if eq .Site.Params.includeBootstrapJs true}}
+{{ $jqueryJs := "js/jquery-3.3.1.slim.min.js" -}}
+<script src="{{ $jqueryJs | absURL }}"></script>
+{{ $bootstrapJs := "js/bootstrap.bundle.min.js" -}}
+<script src="{{ $bootstrapJs | absURL }}"></script>
+{{ end }}

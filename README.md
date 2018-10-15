@@ -115,6 +115,7 @@ pygmentsStyle = "pygments"
   showPostSummary = false
   googleAnalytics = "UA-123456789-1"
   cookieConsent = true
+  includeBootstrapJs = false
 
   faviconSafariPinnedTabColor = "#5bbad5"
   faviconMsApplicationTileColor = "#da532c"
@@ -211,7 +212,7 @@ customBlockquoteStyle = true
 ```
 * Optional (but **recommended**, so that your blockquotes are formatted nicely)
 * If set to `true`, this will use custom blockquote styles
-* See [blockquote](#blockquote)
+* See [blockquote](#blockquote) shortcode
 
 ### Post Summary
 
@@ -238,6 +239,15 @@ cookieConsent = true
 * Optional
 * If set to `true`, this will show a cookie consent popup in order to be compliant with GDPR
 * To configure the cookie consent popup see [Configure Cookie Consent](#configure-cookie-consent)
+
+### Include Bootstrap JS
+
+```
+includeBootstrapJs = false
+```
+* Optional
+* If set to `true`, this will include the Bootstrap JS scripts (they are not included by default)
+* This is only necessary if you plan to override the theme and need to use Bootstrap functionality that requires its JS scripts
 
 ### Favicon Colors on Various Platforms
 
