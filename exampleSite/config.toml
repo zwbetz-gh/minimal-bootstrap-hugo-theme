@@ -33,6 +33,6 @@ enableGitInfo = false
   url = "/about/"
   weight = 2
   [[menu.nav]]
-  name = "Some Page"
+  name = "Contact"
   url = "#"
   weight = 3
