@@ -28,6 +28,7 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
     * [Post Summary](#post-summary)
     * [Google Analytics](#google-analytics)
     * [Cookie Consent](#cookie-consent)
+    * [Include Bootstrap JS](#include-bootstrap-js)
     * [Favicon Colors on Various Platforms](#favicon-colors-on-various-platforms)
     * [Menu Nav](#menu-nav)
 * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
