@@ -9,8 +9,14 @@ enableGitInfo = false
 
 [params]
   description = "Some description"
-  navbarBackgroundColor = "#000"
-  wrapperMaxWidth = "780px"
+  contentBackgroundColor = "#fff"
+  contentTextColor = "#212529"
+  contentLinkColor = "#007bff"
+  contentLinkHoverColor = "#0056b3"
+  navbarBackgroundColor = "#212529"
+  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
+  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
+  wrapperMaxWidth = "800px"
   customDateFormat = "Monday, January 2, 2006"
   customCodeStyle = true
   customBlockquoteStyle = true

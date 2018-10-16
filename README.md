@@ -20,7 +20,13 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
     * [Theme](#theme)
     * [Enable Git Info](#enable-git-info)
     * [Description](#description)
+    * [Content Background Color](#content-background-color)
+    * [Content Text Color](#content-text-color)
+    * [Content Link Color](#content-link-color)
+    * [Content Link Hover Color](#content-link-hover-color)
     * [Navbar Background Color](#navbar-background-color)
+    * [Navbar Link Color](#navbar-link-color)
+    * [Navbar Link Hover Color](#navbar-link-hover-color)
     * [Wrapper Max Width](#wrapper-max-width)
     * [Date Format](#date-format)
     * [Code Style](#code-style)
@@ -108,8 +114,14 @@ pygmentsStyle = "pygments"
 
 [params]
   description = "Some description"
-  navbarBackgroundColor = "#000"
-  wrapperMaxWidth = "780px"
+  contentBackgroundColor = "#fff"
+  contentTextColor = "#212529"
+  contentLinkColor = "#007bff"
+  contentLinkHoverColor = "#0056b3"
+  navbarBackgroundColor = "#212529"
+  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
+  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
+  wrapperMaxWidth = "800px"
   customDateFormat = "Monday, January 2, 2006"
   customCodeStyle = true
   customBlockquoteStyle = true
@@ -160,10 +172,46 @@ enableGitInfo = false
 ### Description
 
 ```
-description = "Your site description"
+description = "Some description"
 ```
 * Optional
 * If present, this will populate the `<meta>` description element
+
+### Content Background Color
+
+```
+contentBackgroundColor = "#fff"
+```
+* Optional
+* If present, this will set the content background color
+* If not present, the default content background color is `#fff`
+
+### Content Text Color
+
+```
+contentTextColor = "#212529"
+```
+* Optional
+* If present, this will set the content text color
+* If not present, the default content text color is `#212529`
+
+### Content Link Color
+
+```
+contentLinkColor = "#007bff"
+```
+* Optional
+* If present, this will set the content link color
+* If not present, the default content link color is `#007bff`
+
+### Content Link Hover Color
+
+```
+contentLinkHoverColor = "#0056b3"
+```
+* Optional
+* If present, this will set the content link hover color
+* If not present, the default content link hover color is `#0056b3`
 
 ### Navbar Background Color
 
@@ -173,16 +221,29 @@ navbarBackgroundColor = "#000"
 * Optional
 * If present, this will set the navbar background color
 * If not present, the default navbar background color is `#212529`
-* The color value can be one of the below:
-    * hex: `"#000"`
-    * rgb: `"rgb(0,0,0)"`
-    * rgba: `"rgba(0,0,0,1)"`
-    * name: `"black"`
+
+### Navbar Link Color
+
+```
+navbarLinkColor = "rgba(255, 255, 255, 0.75)"
+```
+* Optional
+* If present, this will set the navbar link color
+* If not present, the default navbar link color is `rgba(255, 255, 255, 0.75)`
+
+### Navbar Link Hover Color
+
+```
+navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
+```
+* Optional
+* If present, this will set the navbar link hover color
+* If not present, the default navbar link hover color is `rgba(255, 255, 255, 1)`
 
 ### Wrapper Max Width
 
 ```
-wrapperMaxWidth = "780px"
+wrapperMaxWidth = "800px"
 ```
 * Optional
 * If present, this will set the max width of the navbar and page content

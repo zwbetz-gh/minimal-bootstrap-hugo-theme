@@ -13,13 +13,11 @@ body {
   padding: 18px 0;
   margin-right: 1rem; 
   font-weight: bold; 
-  color: rgba(255,255,255,.75);
 }
 
 .custom-navbar a:hover,
 .custom-navbar a:focus {
   text-decoration: none; 
-  color: rgba(255,255,255,1);
 }
 
 @media print {
@@ -36,6 +34,48 @@ img {
   max-width: 100%;
 }
 
+{{ with .Site.Params.contentBackgroundColor }}
+body {
+  background-color: {{ . }};
+}
+{{ else }}
+body {
+  background-color: #fff;
+}
+{{ end }}
+
+{{ with .Site.Params.contentTextColor }}
+body {
+  color: {{ . }};
+}
+{{ else }}
+body {
+  color: #212529;
+}
+{{ end }}
+
+{{ with .Site.Params.contentLinkColor }}
+a {
+  color: {{ . }};
+}
+{{ else }}
+a {
+  color: #007bff;
+}
+{{ end }}
+
+{{ with .Site.Params.contentLinkHoverColor }}
+a:hover,
+a:focus {
+  color: {{ . }};
+}
+{{ else }}
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+{{ end }}
+
 {{ with .Site.Params.navbarBackgroundColor }}
 .custom-navbar {
   background-color: {{ . }};
@@ -43,6 +83,28 @@ img {
 {{ else }}
 .custom-navbar {
   background-color: #212529;
+}
+{{ end }}
+
+{{ with .Site.Params.navbarLinkColor }}
+.custom-navbar a {
+  color: {{ . }};
+}
+{{ else }}
+.custom-navbar a {
+  color: rgba(255,255,255,.75);
+}
+{{ end }}
+
+{{ with .Site.Params.navbarLinkHoverColor }}
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: {{ . }};
+}
+{{ else }}
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255,255,255,1);
 }
 {{ end }}
 
