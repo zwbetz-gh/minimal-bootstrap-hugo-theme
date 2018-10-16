@@ -122,7 +122,7 @@ pygmentsStyle = "pygments"
   navbarLinkColor = "rgba(255, 255, 255, 0.75)"
   navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
   wrapperMaxWidth = "800px"
-  customDateFormat = "Monday, January 2, 2006"
+  customDateFormat = "January 2, 2006"
   customCodeStyle = true
   customBlockquoteStyle = true
   showPostSummary = false
@@ -247,16 +247,16 @@ wrapperMaxWidth = "800px"
 ```
 * Optional
 * If present, this will set the max width of the navbar and page content
-* If not present, the default max width is `"800px"`
+* If not present, the default max width is `800px`
 
 ### Date Format
 
 ```
-customDateFormat = "Monday, January 2, 2006"
+customDateFormat = "January 2, 2006"
 ```
 * Optional
 * If present, this will set the date format on your homepage and posts
-* If not present, the default date format is `"January 2, 2006"`
+* If not present, the default date format is `January 2, 2006`
 * See the [hugo docs for a list of valid date formats](https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference)
 
 ### Code Style
