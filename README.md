@@ -53,7 +53,7 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
 
 ## Screenshot
 
-TODO link to screenshot by absolute path 
+![Screenshot](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/blob/master/images/screenshot.png)
 
 ## Installation Options
 
