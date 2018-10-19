@@ -1,6 +1,8 @@
 # Minimal Bootstrap Hugo Theme
 
-A minimal hugo theme made with bootstrap that focuses on content readability.
+A minimal hugo theme made with bootstrap that focuses on content readability. 
+
+Demo: <https://themes.gohugo.io/theme/minimal-bootstrap-hugo-theme/>
 
 The typical page size, if the page has no images, is under 300kb (even lower if assets are compressed by your web server). The only other assets loaded besides your actual HTML page are: 
 
@@ -63,6 +65,7 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
 1. Download a zip and unzip it
     1. [Download a zip of the theme from GitHub](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/archive/master.zip)
     1. Unzip it into `YOUR_SITE/themes/`
+    1. Once unzipped, it will be named `minimal-bootstrap-hugo-theme-master`. Rename it to `minimal-bootstrap-hugo-theme`
 
 Once installed, add this line to your `config.toml`:
 

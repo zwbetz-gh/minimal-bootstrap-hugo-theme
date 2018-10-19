@@ -40,5 +40,5 @@ enableGitInfo = false
   weight = 2
   [[menu.nav]]
   name = "Contact"
-  url = "#"
+  url = "/contact/"
   weight = 3
