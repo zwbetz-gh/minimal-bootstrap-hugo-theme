@@ -14,6 +14,7 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
 ## Table of Contents
 
 * [Screenshot](#screenshot)
+* [Hugo Version](#hugo-version)
 * [Installation Options](#installation-options)
 * [Update Options](#update-options)
 * [Site Layout](#site-layout)
@@ -56,6 +57,10 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
 ## Screenshot
 
 ![Screenshot](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/blob/master/images/screenshot.png)
+
+## Hugo Version
+
+This theme requires hugo version `0.48` or above. Take a look at the [hugo releases](https://github.com/gohugoio/hugo/releases) and download the hugo binary for your operating system. 
 
 ## Installation Options
 
