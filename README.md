@@ -9,7 +9,8 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
 * Bootstrap CSS
 * Favicon (if enabled)
 * Google Analytics JS (if enabled)
-* Cookie Consent CSS/JS (if enabled)  
+* Cookie Consent CSS/JS (if enabled)
+* Google Roboto Font (if enabled)
 
 ## Table of Contents
 
@@ -38,6 +39,7 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
     * [Google Analytics](#google-analytics)
     * [Cookie Consent](#cookie-consent)
     * [Include Bootstrap JS](#include-bootstrap-js)
+    * [Google Font Roboto](#google-font-roboto)
     * [Favicon Colors on Various Platforms](#favicon-colors-on-various-platforms)
     * [Menu Nav](#menu-nav)
 * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
@@ -137,6 +139,7 @@ pygmentsStyle = "pygments"
   googleAnalytics = "UA-123456789-1"
   cookieConsent = true
   includeBootstrapJs = false
+  googleFontRoboto = true
 
   faviconSafariPinnedTabColor = "#5bbad5"
   faviconMsApplicationTileColor = "#da532c"
@@ -318,6 +321,15 @@ includeBootstrapJs = false
 * Optional
 * If set to `true`, this will include the Bootstrap JS scripts (they are not included by default)
 * This is only necessary if you plan to override the theme and need to use Bootstrap functionality that requires its JS scripts
+
+### Google Font Roboto
+
+```
+googleFontRoboto = true
+```
+* Optional
+* If set to `true`, this will use the Google Font Roboto
+* If set to `false`, or if not present, the default Bootstrap [native font stack](https://getbootstrap.com/docs/4.1/content/reboot/#native-font-stack) will be used
 
 ### Favicon Colors on Various Platforms
 

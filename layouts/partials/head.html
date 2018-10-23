@@ -28,6 +28,10 @@
   {{ $bootstrapCss := "css/bootstrap.min.css" }}
   <link rel="stylesheet" href="{{ $bootstrapCss | absURL }}" />
 
+  {{ if eq .Site.Params.googleFontRoboto true }}
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+  {{ end }}
+
   {{ if .IsHome }}
   {{ $homepage := "" }}{{ range first 1 .Site.Menus.nav }}{{ $homepage = .Name }}{{ end }}
   <title>{{ $homepage }} | {{ .Site.Title }}</title>

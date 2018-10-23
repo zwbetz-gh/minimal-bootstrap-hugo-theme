@@ -24,6 +24,7 @@ enableGitInfo = false
   googleAnalytics = "UA-123456789-1"
   cookieConsent = true
   includeBootstrapJs = false
+  googleFontRoboto = true
 
   faviconSafariPinnedTabColor = "#5bbad5"
   faviconMsApplicationTileColor = "#da532c"
