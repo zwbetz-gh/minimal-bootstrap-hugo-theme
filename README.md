@@ -52,6 +52,7 @@ The typical page size, if the page has no images, is under 300kb (even lower if 
     * [blockquote](#blockquote)
     * [imgAbs](#imgabs)
     * [imgRel](#imgrel)
+* [Getting Help](#getting-help)
 * [Contribution](#contribution)
 
 ## Screenshot
@@ -425,6 +426,18 @@ This will insert an image into your content by relative path. To use it, pass th
 ```
 {{< imgRel pathURL="img/some-img.png" alt="Some description" class="some-class" style="some-style" >}}
 ```
+
+## Getting Help
+
+If you run into an issue that isn't answered by this documentation, then head over to the [hugo discussion forum](https://discourse.gohugo.io/). The folks there are quite helpful and friendly. When asking your question, let them know:
+
+* your operating system 
+* your hugo version (to find out, run `hugo version`)
+* what you tried
+* what result you expected 
+* what result you actually got
+
+Then provide a link to your git repo so that they can help you troubleshoot the issue. If you can’t do that, create a sample project in a git repo, so that your issue can be reliably reproduced. If you can't do that, post your relevant hugo files (layouts/templates) and any relevant command output. 
 
 ## Contribution
 
