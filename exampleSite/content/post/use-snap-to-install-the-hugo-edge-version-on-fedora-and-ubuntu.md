@@ -4,6 +4,8 @@ date: 2018-10-26T12:59:51-05:00
 publishdate: 2018-10-26
 lastmod: 2018-10-26
 draft: false
+aliases:
+  - /use-snap-to-install-the-hugo-edge-version-on-fedora/
 ---
 
 If you are using the Fedora or Ubuntu Linux distributions -- I'm currently on Fedora 28 -- and would like to [help test the latest development version of Hugo](https://discourse.gohugo.io/t/help-test-upcoming-hugo-0-50/14880), or if you just want to be on the bleeding-edge of things, this post is for you. 
@@ -72,7 +74,7 @@ Happy testing :)
 
 ## Update or remove Hugo
 
-To update Hugo:
+Snaps are [updated automatically](https://docs.snapcraft.io/keeping-snaps-up-to-date/7022). To manually update Hugo:
 
 ```
 sudo snap refresh hugo
