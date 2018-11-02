@@ -5,7 +5,7 @@
 
 {{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
   <p>
-    <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
     {{ $customDateFormat := "January 2, 2006" }}
     {{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
     <small class="text-secondary">{{ .PublishDate.Format $customDateFormat }}</small>

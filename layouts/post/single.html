@@ -1,6 +1,6 @@
 {{- define "main" -}}
 
-<h1>{{ .Title | markdownify }}</h1>
+<h1>{{ .Title }}</h1>
 <p><small class="text-secondary">
 {{ $customDateFormat := "January 2, 2006" }}
 {{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
