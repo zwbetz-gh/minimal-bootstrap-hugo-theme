@@ -2,13 +2,16 @@
 
 A minimal hugo theme made with bootstrap that focuses on content readability. 
 
-Demo: <https://themes.gohugo.io/theme/minimal-bootstrap-hugo-theme/>
-
 The typical page size, if the page has no images, is under 300kb. It's even lower if assets are compressed by your web server. The only other assets loaded besides the HTML and the Bootstrap CSS are: 
 
 * Favicon (if enabled)
 * Google Analytics JS (if enabled)
-* Cookie Consent CSS/JS (if enabled)  
+* Cookie Consent CSS/JS (if enabled)
+
+Demos:
+
+* Official demo, weekly-ish updates: <https://themes.gohugo.io/theme/minimal-bootstrap-hugo-theme/>
+* Dev demo, immediate updates: <https://focused-williams-f75490.netlify.com/>
 
 ## Table of Contents
 
