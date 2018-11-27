@@ -133,7 +133,7 @@ pygmentsStyle = "pygments"
   navbarLinkColor = "rgba(255, 255, 255, 0.75)"
   navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
   wrapperMaxWidth = "800px"
-  customDateFormat = "January 2, 2006"
+  customDateFormat = "Jan 2, 2006"
   customCodeStyle = true
   customBlockquoteStyle = true
   showPostSummary = false
@@ -263,7 +263,7 @@ wrapperMaxWidth = "800px"
 ### Date Format
 
 ```
-customDateFormat = "January 2, 2006"
+customDateFormat = "Jan 2, 2006"
 ```
 * Optional
 * If present, this will set the date format on your homepage and posts

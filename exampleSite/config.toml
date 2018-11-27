@@ -16,7 +16,7 @@ enableGitInfo = false
   navbarLinkColor = "rgba(255, 255, 255, 0.75)"
   navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
   wrapperMaxWidth = "800px"
-  customDateFormat = "January 2, 2006"
+  customDateFormat = "Jan 2, 2006"
   customCodeStyle = true
   customBlockquoteStyle = true
   showPostSummary = false
@@ -41,3 +41,7 @@ enableGitInfo = false
   name = "Contact"
   url = "/contact/"
   weight = 3
+  [[menu.nav]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 4
