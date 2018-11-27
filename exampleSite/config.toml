@@ -1,7 +1,7 @@
 baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Some Title"
-theme = "minimal-bootstrap-hugo-theme"
+# theme = "minimal-bootstrap-hugo-theme"
 enableGitInfo = false
 
 [permalinks]

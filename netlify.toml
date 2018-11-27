@@ -1,6 +1,6 @@
 [build]
 publish = "exampleSite/public"
-command = "tree && hugo --source exampleSite --config exampleSite/config.toml --themesDir /opt/build --theme repo && tree"
+command = "pwd && tree && hugo --source exampleSite --config exampleSite/config.toml --themesDir /opt/build --theme repo && tree"
 
 [build.environment]
 HUGO_VERSION = "0.51"
