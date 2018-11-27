@@ -2,6 +2,5 @@
 publish = "exampleSite/public"
 command = "hugo --source exampleSite --config exampleSite/config.toml --themesDir /opt/build --theme repo"
 
-[context.production.environment]
+[build.environment]
 HUGO_VERSION = "0.51"
-HUGO_ENV = "production"
