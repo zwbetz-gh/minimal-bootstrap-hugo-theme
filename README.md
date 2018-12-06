@@ -50,7 +50,7 @@ Demos:
     * [Menu Nav](#menu-nav)
 * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
 * [Override](#override)
-    * [Navbar Example](#navbar-example)
+    * [Homepage Example](#homepage-example)
     * [Configure Cookie Consent](#configure-cookie-consent)
 * [Syntax Highlighting](#syntax-highlighting)
 * [Front Matter Dates](#front-matter-dates)
@@ -388,13 +388,13 @@ To generate all these favicons from a single image, use the [RealFaviconGenerato
 
 ## Override
 
-### Navbar Example
+### Homepage Example
 
-As an example, let's say you didn't like the default theme navbar, and wanted to design one of your own. To do this, you would:
+As an example, let's say you didn't like the default homepage, and wanted to design one of your own. To do this, you would:
 
-1. Copy file `YOUR_SITE/themes/minimal-bootstrap-hugo-theme/layouts/partials/nav.html`
-1. Paste that file to `YOUR_SITE/layouts/partials/nav.html`
-1. Edit `nav.html` as desired
+1. Copy file `YOUR_SITE/themes/minimal-bootstrap-hugo-theme/layouts/index.html`
+1. Paste that file to `YOUR_SITE/layouts/index.html`
+1. Edit `index.html` as desired
 
 ### Configure Cookie Consent
 
@@ -475,11 +475,13 @@ style="some-style" >}}
 
 ### `imgProc`
 
-This will process an image from a [page bundle](https://gohugo.io/content-management/page-bundles/). To use it, pass the image name (`img`), command (`command`), and command options (`options`). 
+This will process an image from a [page bundle](https://gohugo.io/content-management/page-bundles/), then provide a link to the original image. To use it, pass the image name, command, and command options. 
 
-The `command` argument will be on of: `Resize`, `Fit`, `Fill`. See the [image processing](https://gohugo.io/content-management/image-processing/) docs for a deeper dive.
+The `command` argument will be on of: `Resize`, `Fit`, `Fill`. See the [image processing](https://gohugo.io/content-management/image-processing/) docs for a deeper dive. 
 
 These arguments are optional: `alt`, `class`, `style`.
+
+The below example resizes an image to 800px width, while keeping the aspect ratio. 
 
 ```
 {{< imgProc 
