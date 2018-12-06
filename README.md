@@ -477,7 +477,7 @@ style="some-style" >}}
 
 This will process an image from a [page bundle](https://gohugo.io/content-management/page-bundles/), then provide a link to the original image. To use it, pass the image name, command, and command options. 
 
-The `command` argument will be on of: `Resize`, `Fit`, `Fill`. For a deeper dive see the [hugo docs for image processing](https://gohugo.io/content-management/image-processing/). 
+The `command` argument will be one of: `Resize`, `Fit`, `Fill`. For a deeper dive see the [hugo docs for image processing](https://gohugo.io/content-management/image-processing/). 
 
 These arguments are optional: `alt`, `class`, `style`.
 
