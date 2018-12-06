@@ -10,8 +10,8 @@ The typical page size, if the page has no images, is under 300kb. It's even lowe
 
 Demos:
 
-* Official demo, weekly-ish updates: <https://themes.gohugo.io/theme/minimal-bootstrap-hugo-theme/>
 * Dev demo, immediate updates: <https://focused-williams-f75490.netlify.com/>
+* Hugo Themes demo, weekly-ish updates: <https://themes.gohugo.io/theme/minimal-bootstrap-hugo-theme/>
 
 ## Table of Contents
 
