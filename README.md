@@ -116,6 +116,9 @@ title = "Some Title"
 theme = "minimal-bootstrap-hugo-theme"
 enableGitInfo = false
 
+[taxonomies]
+  tag = "tags"
+
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = "pygments"
@@ -151,13 +154,17 @@ pygmentsStyle = "pygments"
   url = "/"
   weight = 1
   [[menu.nav]]
-  name = "About"
-  url = "/about/"
+  name = "Tags"
+  url = "/tags/"
   weight = 2
   [[menu.nav]]
-  name = "Some Page"
-  url = "#"
+  name = "About"
+  url = "/about/"
   weight = 3
+  [[menu.nav]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 4
 ```
 
 ## config.toml Options

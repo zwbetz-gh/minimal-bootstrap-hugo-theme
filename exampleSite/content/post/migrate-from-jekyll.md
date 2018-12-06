@@ -4,6 +4,7 @@ date: 2014-03-10
 publishdate: 2014-03-10
 lastmod: 2014-03-10
 draft: false
+tags: ["hugo", "jekyll", "migration", "git", "templates"]
 ---
 
 ## Move static content to `static`

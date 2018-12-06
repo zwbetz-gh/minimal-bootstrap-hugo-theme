@@ -1,11 +1,16 @@
 {{- define "main" -}}
 
 <h1>{{ .Title | markdownify }}</h1>
-<p><small class="text-secondary">
-{{ $customDateFormat := "January 2, 2006" }}
-{{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
-{{ .PublishDate.Format $customDateFormat }}{{ if gt .Lastmod .PublishDate }}, updated {{ .Lastmod.Format $customDateFormat }}{{ end }}
-</small></p>
+<p>
+  <small class="text-secondary">
+  {{ $customDateFormat := "January 2, 2006" }}
+  {{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
+  {{ .PublishDate.Format $customDateFormat }}{{ if gt .Lastmod .PublishDate }}, updated {{ .Lastmod.Format $customDateFormat }}{{ end }}
+  </small>
+  {{ range .Params.tags }}
+  <small><code><a href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a></code></small>
+  {{ end }}
+</p>
 {{ .Content }}
 
 {{- end -}}

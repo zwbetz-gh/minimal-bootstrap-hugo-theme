@@ -4,6 +4,7 @@ date = "2014-04-02"
 publishdate = "2014-04-02"
 lastmod = "2014-04-02"
 draft = false
+tags = ["hugo", "git", "fun"]
 +++
 
 ## Step 1. Install Hugo

@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Some Title"
 enableGitInfo = false
 
+[taxonomies]
+  tag = "tags"
+
 [permalinks]
   post = "/:filename/"
 
@@ -34,12 +37,12 @@ enableGitInfo = false
   url = "/"
   weight = 1
   [[menu.nav]]
-  name = "About"
-  url = "/about/"
+  name = "Tags"
+  url = "/tags/"
   weight = 2
   [[menu.nav]]
-  name = "Contact"
-  url = "/contact/"
+  name = "About"
+  url = "/about/"
   weight = 3
   [[menu.nav]]
   name = "RSS"
