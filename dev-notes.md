@@ -1,6 +1,6 @@
 # Dev Notes
 
-To build the example site against the theme locally:
+## Run Theme Against Example Site Locally
 
 ```
 hugo server \
@@ -11,3 +11,7 @@ hugo server \
 --theme minimal-bootstrap-hugo-theme \
 --renderToDisk
 ```
+
+## Screenshots
+
+Use <https://www.befunky.com/> to crop and resize screenshots
