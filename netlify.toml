@@ -3,7 +3,7 @@ publish = "exampleSite/public"
 command = """hugo \
   --source exampleSite \
   --config exampleSite/config.toml \
-  --themesDir /opt/build \
+  --themesDir ../.. \
   --theme repo \
   --baseURL https://focused-williams-f75490.netlify.com"""
 
