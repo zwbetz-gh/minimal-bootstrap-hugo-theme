@@ -5,9 +5,7 @@
     {{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
     <br>
     <small class="text-secondary">{{ .PublishDate.Format $customDateFormat }}</small>
-    {{ range .Params.tags }}
-    <small><code><a href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a></code></small>
-    {{ end }}
+    {{ partial "tags" . }}
     {{ if eq .Site.Params.showPostSummary true }}
     <br>
     {{ .Summary }}
