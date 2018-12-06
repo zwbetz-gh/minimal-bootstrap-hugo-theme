@@ -5,7 +5,7 @@ command = """hugo \
   --config exampleSite/config.toml \
   --themesDir ../.. \
   --theme repo \
-  --baseURL https://focused-williams-f75490.netlify.com"""
+  --baseURL https://minimal-bootstrap-hugo-theme.netlify.com/"""
 
 [build.environment]
 HUGO_VERSION = "0.51"
