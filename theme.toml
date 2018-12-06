@@ -7,7 +7,7 @@ licenselink = "https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/blob/ma
 description = "A minimal hugo theme made with bootstrap that focuses on content readability"
 homepage = "https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme"
 tags = ["minimalist", "blog", "clean", "simple", "bootstrap"]
-features = ["responsive", "small page size", "google analytics", "cookie consent"]
+features = ["responsive", "small page size", "google analytics", "cookie consent", "tags"]
 min_version = 0.48
 
 [author]

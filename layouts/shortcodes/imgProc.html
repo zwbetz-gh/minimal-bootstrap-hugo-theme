@@ -1,0 +1,23 @@
+{{- $img := .Get "img" -}}
+{{- $command := .Get "command" -}}
+{{- $options := .Get "options" -}}
+{{- $alt := .Get "alt" -}}
+{{- $class := .Get "class" -}}
+{{- $style := .Get "style" -}}
+
+{{- $original := .Page.Resources.GetMatch (printf "*%s*" $img) -}}
+{{- $new := "" -}}
+
+{{- if eq $command "Fit"}}
+  {{- $new = $original.Fit $options -}}
+{{- else if eq $command "Resize"}}
+  {{- $new = $original.Resize $options -}}
+{{- else if eq $command "Fill"}}
+  {{- $new = $original.Fill $options -}}
+{{- else -}}
+  {{- errorf "Invalid image processing command: Must be one of Fit, Fill or Resize."}}
+{{- end -}}
+
+<a href="{{ $original.Permalink }}">
+  <img src="{{ $new.Permalink }}" alt="{{ $alt }}" class="{{ $class }}" style="{{ $style | safeCSS }}">
+</a>

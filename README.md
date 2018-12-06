@@ -18,12 +18,18 @@ Demos:
 * [Screenshot](#screenshot)
 * [Hugo Version](#hugo-version)
 * [Installation Options](#installation-options)
+    * [Add it as a Git Submodule](#add-it-as-a-git-submodule)
+    * [Download a Zip and Unzip it](#download-a-zip-and-unzip-it)
+    * [Update the Config File after Installing](#update-the-config-file-after-installing)
 * [Update Options](#update-options)
+    * [Git Submodule](#git-submodule)
+    * [Zip](#zip)
 * [Site Layout](#site-layout)
 * [Example config.toml](#example-configtoml)
 * [config.toml Options](#configtoml-options)
     * [Theme](#theme)
     * [Enable Git Info](#enable-git-info)
+    * [Taxonomies](#taxonomies)
     * [Description](#description)
     * [Content Background Color](#content-background-color)
     * [Content Text Color](#content-text-color)
@@ -54,6 +60,7 @@ Demos:
     * [blockquote](#blockquote)
     * [imgAbs](#imgabs)
     * [imgRel](#imgrel)
+    * [imgProc](#imgproc)
 * [Getting Help](#getting-help)
 * [Contribution](#contribution)
 
@@ -67,13 +74,18 @@ This theme requires hugo version `0.48` or above. Take a look at the [hugo relea
 
 ## Installation Options
 
-1. Add it as a git submodule
-    1. `cd YOUR_SITE`
-    1. `git submodule add https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git themes/minimal-bootstrap-hugo-theme`
-1. Download a zip and unzip it
-    1. [Download a zip of the theme from GitHub](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/archive/master.zip)
-    1. Unzip it into `YOUR_SITE/themes/`
-    1. Once unzipped, it will be named `minimal-bootstrap-hugo-theme-master`. Rename it to `minimal-bootstrap-hugo-theme`
+### Add it as a Git Submodule
+
+1. `cd YOUR_SITE`
+1. `git submodule add https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git themes/minimal-bootstrap-hugo-theme`
+
+### Download a Zip and Unzip it
+
+1. [Download a zip of the theme from GitHub](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/archive/master.zip)
+1. Unzip it into `YOUR_SITE/themes/`
+1. Once unzipped, it will be named `minimal-bootstrap-hugo-theme-master`. Rename it to `minimal-bootstrap-hugo-theme`
+
+### Update the Config File after Installing
 
 Once installed, add this line to your `config.toml`:
 
@@ -83,10 +95,14 @@ theme = "minimal-bootstrap-hugo-theme"
 
 ## Update Options
 
+### Git Submodule
+
 If you used the git submodule option to install the theme, update it by running:
 
 1. `cd YOUR_SITE`
 1. `git submodule foreach git pull origin master`
+
+### Zip
 
 If you downloaded a zip to install the theme, just do those installation steps again to update it.
 
@@ -186,6 +202,15 @@ enableGitInfo = false
 * If set to `true`, `lastmod` date will be git's last revision of the file
 * If set to `false`, `lastmod` date will pull from front matter
 * See [Front Matter Dates](#front-matter-dates) for more info
+
+### Taxonomies
+
+```
+[taxonomies]
+  tag = "tags"
+```
+* **Required**
+* Setup tags
 
 ### Description
 
@@ -422,18 +447,48 @@ I am beginning to learn that it is the sweet, **simple** things of life which ar
 
 ### `imgAbs`
 
-This will insert an image into your content by absolute path. To use it, pass the `pathURL` of your image. These arguments are optional: `alt`, `class`, `style`.
+This will insert an image into your content by absolute path. To use it, pass the `pathURL` of your image. 
+
+These arguments are optional: `alt`, `class`, `style`.
 
 ```
-{{< imgAbs pathURL="img/some-img.png" alt="Some description" class="some-class" style="some-style" >}}
+{{< imgAbs 
+pathURL="img/some-img.png" 
+alt="Some description" 
+class="some-class" 
+style="some-style" >}}
 ```
 
 ### `imgRel`
 
-This will insert an image into your content by relative path. To use it, pass the `pathURL` of your image. These arguments are optional: `alt`, `class`, `style`.
+This will insert an image into your content by relative path. To use it, pass the `pathURL` of your image. 
+
+These arguments are optional: `alt`, `class`, `style`.
 
 ```
-{{< imgRel pathURL="img/some-img.png" alt="Some description" class="some-class" style="some-style" >}}
+{{< imgRel 
+pathURL="img/some-img.png" 
+alt="Some description" 
+class="some-class" 
+style="some-style" >}}
+```
+
+### `imgProc`
+
+This will process an image from a [page bundle](https://gohugo.io/content-management/page-bundles/). To use it, pass the image name (`img`), command (`command`), and command options (`options`). 
+
+The `command` argument will be on of: `Resize`, `Fit`, `Fill`. See the [image processing](https://gohugo.io/content-management/image-processing/) docs for a deeper dive.
+
+These arguments are optional: `alt`, `class`, `style`.
+
+```
+{{< imgProc 
+img="some-img.png" 
+command="Resize" 
+options="800x" 
+alt="Some description" 
+class="some-class" 
+style="some-style" >}}
 ```
 
 ## Getting Help
