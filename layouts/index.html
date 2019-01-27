@@ -1,6 +1,11 @@
 {{- define "main" -}}
 
-{{ $homepage := "" }}{{ range first 1 .Site.Menus.nav }}{{ $homepage = .Name }}{{ end }}
+{{ $homepage := "" }}
+{{ with .Site.Menus.nav }}
+  {{ range first 1 . }}
+    {{ $homepage = .Name }}
+  {{ end }}
+{{ end }}
 <h1>{{ $homepage }}</h1>
 
 {{ partial "post-list" . }}
