@@ -31,7 +31,12 @@
   <link rel="stylesheet" href="{{ $bootstrapCss | absURL }}" />
 
   {{ if .IsHome }}
-  {{ $homepage := "" }}{{ range first 1 .Site.Menus.nav }}{{ $homepage = .Name }}{{ end }}
+  {{ $homepage := "" }}
+  {{ with .Site.Menus.nav }}
+    {{ range first 1 . }}
+      {{ $homepage = .Name }}
+    {{ end }}
+  {{ end }}
   <title>{{ $homepage }} | {{ .Site.Title }}</title>
   {{ else }}
   <title>{{ .Title }} | {{ .Site.Title }}</title>
