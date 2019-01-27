@@ -1,7 +1,7 @@
 baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Some Title"
-enableGitInfo = false
+theme = "minimal-bootstrap-hugo-theme"
 
 [taxonomies]
   tag = "tags"
@@ -26,7 +26,6 @@ enableGitInfo = false
   googleAnalytics = "UA-123456789-1"
   cookieConsent = true
   includeBootstrapJs = false
-
   faviconSafariPinnedTabColor = "#5bbad5"
   faviconMsApplicationTileColor = "#da532c"
   faviconThemeColor = "#ffffff"

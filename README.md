@@ -24,30 +24,8 @@ Demos:
 * [Update Options](#update-options)
     * [Git Submodule](#git-submodule)
     * [Zip](#zip)
-* [Site Layout](#site-layout)
-* [Example config.toml](#example-configtoml)
-* [config.toml Options](#configtoml-options)
-    * [Theme](#theme)
-    * [Enable Git Info](#enable-git-info)
-    * [Taxonomies](#taxonomies)
-    * [Description](#description)
-    * [Content Background Color](#content-background-color)
-    * [Content Text Color](#content-text-color)
-    * [Content Link Color](#content-link-color)
-    * [Content Link Hover Color](#content-link-hover-color)
-    * [Navbar Background Color](#navbar-background-color)
-    * [Navbar Link Color](#navbar-link-color)
-    * [Navbar Link Hover Color](#navbar-link-hover-color)
-    * [Wrapper Max Width](#wrapper-max-width)
-    * [Date Format](#date-format)
-    * [Code Style](#code-style)
-    * [Blockquote Style](#blockquote-style)
-    * [Post Summary](#post-summary)
-    * [Google Analytics](#google-analytics)
-    * [Cookie Consent](#cookie-consent)
-    * [Include Bootstrap JS](#include-bootstrap-js)
-    * [Favicon Colors on Various Platforms](#favicon-colors-on-various-platforms)
-    * [Menu Nav](#menu-nav)
+* [Example Site Layout](#example-site-layout)
+* [Configuration](#configuration)
 * [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
 * [Override](#override)
     * [Homepage Example](#homepage-example)
@@ -100,15 +78,15 @@ theme = "minimal-bootstrap-hugo-theme"
 If you used the git submodule option to install the theme, update it by running:
 
 1. `cd YOUR_SITE`
-1. `git submodule foreach git pull origin master`
+1. `git submodule update --remote --merge`
 
 ### Zip
 
 If you downloaded a zip to install the theme, just do those installation steps again to update it.
 
-## Site Layout
+## Example Site Layout
 
-This theme expects your _posts_ to be under the `post/` folder.
+This theme expects your _posts_ to be under the `post` folder.
 
 ```
 │   config.toml
@@ -121,264 +99,11 @@ This theme expects your _posts_ to be under the `post/` folder.
 │           migrate-from-jekyll.md
 ```
 
-Also see the `exampleSite/`.
+Also see the [`exampleSite`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/tree/master/exampleSite) layout.
 
-## Example `config.toml`
+## Configuration
 
-```toml
-baseURL = "https://example.com"
-languageCode = "en-us"
-title = "Some Title"
-theme = "minimal-bootstrap-hugo-theme"
-enableGitInfo = false
-
-[taxonomies]
-  tag = "tags"
-
-pygmentsCodefences = true
-pygmentsCodefencesGuessSyntax = true
-pygmentsStyle = "pygments"
-
-[permalinks]
-  post = "/:filename/"
-
-[params]
-  description = "Some description"
-  contentBackgroundColor = "#fff"
-  contentTextColor = "#212529"
-  contentLinkColor = "#007bff"
-  contentLinkHoverColor = "#0056b3"
-  navbarBackgroundColor = "#212529"
-  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
-  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
-  wrapperMaxWidth = "800px"
-  customDateFormat = "Jan 2, 2006"
-  customCodeStyle = true
-  customBlockquoteStyle = true
-  showPostSummary = false
-  googleAnalytics = "UA-123456789-1"
-  cookieConsent = true
-  includeBootstrapJs = false
-
-  faviconSafariPinnedTabColor = "#5bbad5"
-  faviconMsApplicationTileColor = "#da532c"
-  faviconThemeColor = "#ffffff"
-
-[menu]
-  [[menu.nav]]
-  name = "Posts"
-  url = "/"
-  weight = 1
-  [[menu.nav]]
-  name = "Tags"
-  url = "/tags/"
-  weight = 2
-  [[menu.nav]]
-  name = "About"
-  url = "/about/"
-  weight = 3
-  [[menu.nav]]
-  name = "RSS"
-  url = "/index.xml"
-  weight = 4
-```
-
-## config.toml Options
-
-### Theme
-
-```
-theme = "minimal-bootstrap-hugo-theme"
-```
-* **Required**
-* Set your site's theme
-
-### Enable Git Info
-
-```
-enableGitInfo = false
-```
-* Optional
-* If set to `true`, `lastmod` date will be git's last revision of the file
-* If set to `false`, `lastmod` date will pull from front matter
-* See [Front Matter Dates](#front-matter-dates) for more info
-
-### Taxonomies
-
-```
-[taxonomies]
-  tag = "tags"
-```
-* **Required**
-* Setup tags
-
-### Description
-
-```
-description = "Some description"
-```
-* Optional
-* If present, this will populate the `<meta>` description element
-
-### Content Background Color
-
-```
-contentBackgroundColor = "#fff"
-```
-* Optional
-* If present, this will set the content background color
-* If not present, the default content background color is `#fff`
-
-### Content Text Color
-
-```
-contentTextColor = "#212529"
-```
-* Optional
-* If present, this will set the content text color
-* If not present, the default content text color is `#212529`
-
-### Content Link Color
-
-```
-contentLinkColor = "#007bff"
-```
-* Optional
-* If present, this will set the content link color
-* If not present, the default content link color is `#007bff`
-
-### Content Link Hover Color
-
-```
-contentLinkHoverColor = "#0056b3"
-```
-* Optional
-* If present, this will set the content link hover color
-* If not present, the default content link hover color is `#0056b3`
-
-### Navbar Background Color
-
-```
-navbarBackgroundColor = "#000"
-```
-* Optional
-* If present, this will set the navbar background color
-* If not present, the default navbar background color is `#212529`
-
-### Navbar Link Color
-
-```
-navbarLinkColor = "rgba(255, 255, 255, 0.75)"
-```
-* Optional
-* If present, this will set the navbar link color
-* If not present, the default navbar link color is `rgba(255, 255, 255, 0.75)`
-
-### Navbar Link Hover Color
-
-```
-navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
-```
-* Optional
-* If present, this will set the navbar link hover color
-* If not present, the default navbar link hover color is `rgba(255, 255, 255, 1)`
-
-### Wrapper Max Width
-
-```
-wrapperMaxWidth = "800px"
-```
-* Optional
-* If present, this will set the max width of the navbar and page content
-* If not present, the default max width is `800px`
-
-### Date Format
-
-```
-customDateFormat = "Jan 2, 2006"
-```
-* Optional
-* If present, this will set the date format on your homepage and posts
-* If not present, the default date format is `January 2, 2006`
-* See the [hugo docs for a list of valid date formats](https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference)
-
-### Code Style
-
-```
-customCodeStyle = true
-```
-* Optional (but **recommended**, so that your code snippets are formatted nicely)
-* If set to `true`, this will use custom code styles
-
-### Blockquote Style
-
-```
-customBlockquoteStyle = true
-```
-* Optional (but **recommended**, so that your blockquotes are formatted nicely)
-* If set to `true`, this will use custom blockquote styles
-* See [blockquote](#blockquote) shortcode
-
-### Post Summary
-
-```
-showPostSummary = false
-```
-* Optional
-* If set to `true`, this will show a summary for each post on the homepage
-* For how many words to show in the summary, where to cut it off, etc., see [hugo docs for summaries](https://gohugo.io/content-management/summaries/)
-
-### Google Analytics
-
-```
-googleAnalytics = "UA-123456789-1"
-```
-* Optional
-* If present, Google Analytics will be enabled
-
-### Cookie Consent
-
-```
-cookieConsent = true
-```
-* Optional
-* If set to `true`, this will show a cookie consent popup in order to be compliant with GDPR
-* To configure the cookie consent popup see [Configure Cookie Consent](#configure-cookie-consent)
-
-### Include Bootstrap JS
-
-```
-includeBootstrapJs = false
-```
-* Optional
-* If set to `true`, this will include the Bootstrap JS scripts (they are not included by default)
-* This is only necessary if you plan to override the theme and need to use Bootstrap functionality that requires its JS scripts
-
-### Favicon Colors on Various Platforms
-
-```
-faviconSafariPinnedTabColor = "#000000"
-faviconMsApplicationTileColor = "#da532c"
-faviconThemeColor = "#ffffff"
-```
-* Optional
-* If present, these will set the favicon colors for various platforms
-* To generate these values, see [Favicon and Apple Touch Icon](#favicon-and-apple-touch-icon)
-
-### Menu Nav
-
-```
-[menu]
-  [[menu.nav]]
-  name = "Posts"
-  url = "/"
-  weight = 1
-```
-* **Required**
-* At least one menu nav is required
-* The `name` is what will display in the navbar
-* The `url` will be the url of the menu nav
-* The `weight` will determine how the manu navs are ordered in the navbar
+Copy the `config.toml` from the [`exampleSite`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. 
 
 ## Favicon and Apple Touch Icon
 
