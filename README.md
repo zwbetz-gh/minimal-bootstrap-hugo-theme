@@ -20,7 +20,6 @@ Demos:
 * [Installation Options](#installation-options)
     * [Add it as a Git Submodule](#add-it-as-a-git-submodule)
     * [Download a Zip and Unzip it](#download-a-zip-and-unzip-it)
-    * [Update the Config File after Installing](#update-the-config-file-after-installing)
 * [Update Options](#update-options)
     * [Git Submodule](#git-submodule)
     * [Zip](#zip)
@@ -62,14 +61,6 @@ This theme requires hugo version `0.48` or above. Take a look at the [hugo relea
 1. [Download a zip of the theme from GitHub](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/archive/master.zip)
 1. Unzip it into `YOUR_SITE/themes/`
 1. Once unzipped, it will be named `minimal-bootstrap-hugo-theme-master`. Rename it to `minimal-bootstrap-hugo-theme`
-
-### Update the Config File after Installing
-
-Once installed, add this line to your `config.toml`:
-
-```
-theme = "minimal-bootstrap-hugo-theme"
-```
 
 ## Update Options
 
@@ -132,7 +123,7 @@ You can change the position, layout, color palette, "Learn more" link, complianc
 
 ## Syntax Highlighting
 
-Hugo has built-in syntax highlighting, provided by Chroma. To use it, add these lines to your `config.toml`:
+Hugo has built-in syntax highlighting, provided by Chroma. To use it, add these lines to your `config.toml` right after the `theme` line:
 
 ```
 pygmentsCodefences = true
