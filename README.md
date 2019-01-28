@@ -77,7 +77,9 @@ If you downloaded a zip to install the theme, just do those installation steps a
 
 ## Example Site Layout
 
-This theme expects your _posts_ to be under the `post` folder.
+This theme expects your _posts_ to be under the `post` folder. 
+
+If you want to use a different folder, then override the `post-list.html` partial and replace `post` with the name of your folder. 
 
 ```
 │   config.toml
@@ -89,8 +91,6 @@ This theme expects your _posts_ to be under the `post` folder.
 │           hugoisforlovers.md
 │           migrate-from-jekyll.md
 ```
-
-Also see the [`exampleSite`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/tree/master/exampleSite) layout.
 
 ## Configuration
 
