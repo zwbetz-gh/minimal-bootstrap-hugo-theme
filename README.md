@@ -15,7 +15,6 @@ Demos:
 
 ## Table of Contents
 
-* [Screenshot](#screenshot)
 * [Hugo Version](#hugo-version)
 * [Installation Options](#installation-options)
     * [Add it as a Git Submodule](#add-it-as-a-git-submodule)
@@ -40,10 +39,6 @@ Demos:
     * [imgProc](#imgproc)
 * [Getting Help](#getting-help)
 * [Contribution](#contribution)
-
-## Screenshot
-
-![Screenshot](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/blob/master/images/screenshot.png)
 
 ## Hugo Version
 
