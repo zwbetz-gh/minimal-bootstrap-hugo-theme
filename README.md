@@ -1,5 +1,7 @@
 # Minimal Bootstrap Hugo Theme
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e3929c16-50cc-4e8f-a8f2-e63acc35c83d/deploy-status)](https://app.netlify.com/sites/minimal-bootstrap-hugo-theme/deploys)
+
 A minimal hugo theme made with bootstrap that focuses on content readability. 
 
 The typical page size, if the page has no images, is under 100kb. It's even lower if assets are compressed by your web server. The only other assets loaded besides the HTML and the Bootstrap CSS are: 
