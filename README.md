@@ -11,8 +11,8 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
 - [Installation](#installation)
 - [Updating](#updating)
 - [Run example site](#run-example-site)
-- [Blog post folder](#blog-post-folder)
 - [Configuration](#configuration)
+- [Blog post folder](#blog-post-folder)
 - [Favicons](#favicons)
 - [Override](#override)
   - [Homepage example](#homepage-example)
@@ -51,21 +51,21 @@ git submodule update --remote --merge
 
 ## Run example site
 
-From the root of `themes/cupper-hugo-theme/exampleSite`:
+From the root of `themes/minimal-bootstrap-hugo-theme/exampleSite`:
 
 ```
 hugo server --themesDir ../..
 ```
 
+## Configuration
+
+Copy the `config.toml` from the [`exampleSite`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired.
+
 ## Blog post folder
 
 This theme expects your _posts_ to be under the `post` folder. 
 
-If you want to use a different folder, then override the [`post-list.html`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/blob/master/layouts/partials/post-list.html) partial and replace `post` with the name of your folder. 
-
-## Configuration
-
-Copy the `config.toml` from the [`exampleSite`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. 
+If you want to use a different folder, then override the [`post-list.html`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/blob/master/layouts/partials/post-list.html) partial and replace `post` with the name of your folder.  
 
 ## Favicons
 
