@@ -130,8 +130,6 @@ models:
     type: page
     label: Basic Page
     match: "*.md"
-    exclude:
-      - index.md
     fields: 
       - type: string
         name: title
@@ -163,6 +161,11 @@ models:
         name: aliases
         label: Aliases
         items: 
+          type: string
+      - type: list
+        name: tags
+        Label: Post Tags
+        items:
           type: string
 
 
