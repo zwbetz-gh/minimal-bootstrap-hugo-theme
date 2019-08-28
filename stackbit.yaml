@@ -34,17 +34,17 @@ models:
         label: Taxonomies
         description: Site Taxonomies
         fields:
-          type: string
-          name: tag
-          label: Tag
+          - type: string
+            name: tag
+            label: Tag
       - type: object
         name: permalinks
         label: Permalinks
         description: Site Permalinks
         fields:
-          type: string
-          name: post
-          label: Post
+          - type: string
+            name: post
+            label: Post
       - type: object
         name: params
         label: Params
@@ -151,7 +151,7 @@ models:
       - type: string
         name: publishdate
         label: Publish Date
-      - tyep: string
+      - type: string
         name: lastmod
         label: Last Modified date
       - type: boolean
@@ -164,7 +164,7 @@ models:
           type: string
       - type: list
         name: tags
-        Label: Post Tags
+        label: Post Tags
         items:
           type: string
 
