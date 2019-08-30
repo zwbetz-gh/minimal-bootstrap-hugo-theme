@@ -169,6 +169,6 @@ If you run into an issue that isn't answered by this documentation or the [`exam
 
 # Stackbit Deploy
 
-This theme is is ready to import into Stackbit. This will deploy the site to Netlify and optionally you can select a headless CMS so you can edit the content without ever touching the code. 
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.  
 
 [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme)
