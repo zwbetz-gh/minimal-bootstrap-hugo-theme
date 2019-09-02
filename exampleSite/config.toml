@@ -2,7 +2,6 @@ baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Some Title"
 theme = "minimal-bootstrap-hugo-theme"
-themesDir = "../.."
 
 [taxonomies]
   tag = "tags"

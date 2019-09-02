@@ -26,9 +26,6 @@ models:
       - type: string
         name: theme
         label: Theme Name
-      - type: string
-        name: themesDir
-        label: Themes Folder Path
       - type: object
         name: taxonomies
         label: Taxonomies
