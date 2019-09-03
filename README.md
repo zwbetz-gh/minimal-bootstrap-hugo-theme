@@ -24,6 +24,7 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
   - [`imgRel`](#imgrel)
   - [`imgProc`](#imgproc)
 - [Getting help](#getting-help)
+- [Stackbit Deploy](#stackbit-deploy)
 
 ## Demo
 
