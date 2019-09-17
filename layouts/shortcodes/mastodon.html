@@ -1,0 +1,9 @@
+{{ .Page.Scratch.Set "include_mastodon" true }}
+{{ $width := .Get "width" | default "400" }}
+{{ $height := .Get "height" | default "333"}}
+{{ $status := .Get "status" | default "false" }}
+
+{{ if eq ($status) "false" }}
+{{ else }}
+<iframe src= "{{ $status }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="{{ $width }}" height="{{ $height }}"></iframe>
+{{ end }}

@@ -23,6 +23,7 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
   - [`imgAbs`](#imgabs)
   - [`imgRel`](#imgrel)
   - [`imgProc`](#imgproc)
+  - [`mastodon`](#mastodon)
 - [Getting help](#getting-help)
 - [Stackbit Deploy](#stackbit-deploy)
 
@@ -162,6 +163,18 @@ options="800x"
 alt="Some description" 
 class="some-class" 
 style="some-style" >}}
+```
+
+### `mastodon`
+
+This will embed a toot in an `iframe`.
+
+These arguments are optional: `width`, `height`.
+
+```
+{{% mastodon
+status="https://mastodon.social/@kevingimbel/100700713283716694"
+width="1000" height="500" %}}
 ```
 
 ## Getting help
