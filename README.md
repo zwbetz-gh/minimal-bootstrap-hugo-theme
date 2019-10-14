@@ -23,6 +23,7 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
   - [`imgRel`](#imgrel)
   - [`imgProc`](#imgproc)
   - [`mastodon`](#mastodon)
+- [NathJax](#mathjax)
 - [Getting help](#getting-help)
 - [Stackbit Deploy](#stackbit-deploy)
 
@@ -169,6 +170,12 @@ These arguments are optional: `width`, `height`.
 status="https://mastodon.social/@kevingimbel/100700713283716694"
 width="1000" height="500" %}}
 ```
+
+## MathJax
+
+Use `\\[` and `\\]` for display math and `\\(` and `\\)` for inline math. You might have to add some spaces between symbols to get it to render correctly.
+
+Equation numbering is *not* enabled. See documentation for [how to enable](https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options) and [more](https://docs.mathjax.org/en/latest/input/tex/index.html). You can customise the options in `partials/mathjax-js.html`.
 
 ## Getting help
 
