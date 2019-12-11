@@ -32,7 +32,7 @@ https://minimal-bootstrap-hugo-theme.netlify.com/
 
 ## Minimum Hugo version
 
-Hugo version `0.58.3` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
+Hugo version `0.60.1` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
 
 ## Installation
 
@@ -93,16 +93,9 @@ You can change the position, layout, color palette, "Learn more" link, complianc
 
 ## Syntax highlighting
 
-Hugo has built-in syntax highlighting, provided by Chroma. To use it, add these lines to your `config.toml` right after the `theme` line:
+Hugo has built-in syntax highlighting, provided by Chroma. It is currently enabled in the `config.toml` file from the [`exampleSite`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/tree/master/exampleSite).
 
-```
-pygmentsCodefences = true
-pygmentsStyle = "pygments"
-```
-
-Here, `"pygments"` is just the name of the Chroma style to be used. Checkout the [Chroma style gallery](https://xyproto.github.io/splash/docs/all.html) and choose the style you like.
-
-For a deeper dive see the [hugo docs for syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
+Checkout the [Chroma style gallery](https://xyproto.github.io/splash/docs/all.html) and choose the style you like.
 
 ## Shortcodes
 
@@ -111,9 +104,9 @@ For a deeper dive see the [hugo docs for syntax highlighting](https://gohugo.io/
 This will format your blockquotes nicely. To use it, put the quote within the shortcode. The `author` argument is optional.
 
 ```
-{{% blockquote author="Laura Ingalls" %}}
+{{< blockquote author="Laura Ingalls" >}}
 I am beginning to learn that it is the sweet, **simple** things of life which are the real ones after all.  
-{{% /blockquote %}}
+{{< /blockquote >}}
 ```
 
 ### `imgAbs`
