@@ -24,7 +24,6 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
   - [`imgProc`](#imgproc)
   - [`mastodon`](#mastodon)
 - [Getting help](#getting-help)
-- [Stackbit Deploy](#stackbit-deploy)
 
 ## Demo
 
@@ -166,9 +165,3 @@ width="1000" height="500" %}}
 ## Getting help
 
 If you run into an issue that isn't answered by this documentation or the [`exampleSite`](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/tree/master/exampleSite), then visit the [Hugo forum](https://discourse.gohugo.io/). The folks there are helpful and friendly. **Before** asking your question, be sure to read the [requesting help guidelines](https://discourse.gohugo.io/t/requesting-help/9132).
-
-## Stackbit Deploy
-
-This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS, or Contentful.  
-
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme)
