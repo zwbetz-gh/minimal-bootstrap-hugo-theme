@@ -25,7 +25,7 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
   - [`mastodon`](#mastodon)
 - [Getting help](#getting-help)
 
-## Demo
+## Demo Version
 
 https://minimal-bootstrap-hugo-theme.netlify.com/
 
