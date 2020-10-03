@@ -3,4 +3,4 @@
 {{- $class := .Get "class" | default "" -}}
 {{- $style := .Get "style" | default "" -}}
 
-<a class="{{ $class }}" style="{{ $style | safeCSS }}" href="{{ $pathURL | relURL }}">{{$name}}</a>
+<a class="{{ $class }}" style="{{ $style | safeCSS }}" href="{{ $pathURL | relURL }}">{{ $name }}</a>
