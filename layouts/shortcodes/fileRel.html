@@ -1,0 +1,6 @@
+{{- $pathURL := .Get "pathURL" -}}
+{{- $name := .Get "name" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $style := .Get "style" | default "" -}}
+
+<a class="{{ $class }}" style="{{ $style | safeCSS }}" href="{{ $pathURL | relURL }}">{{ $name }}</a>

@@ -23,6 +23,7 @@ A minimal hugo theme made with bootstrap that focuses on content readability.
   - [`imgRel`](#imgrel)
   - [`imgProc`](#imgproc)
   - [`mastodon`](#mastodon)
+  - [`fileRel`](#fileRel) 
 - [Getting help](#getting-help)
 
 ## Demo
@@ -160,6 +161,21 @@ These arguments are optional: `width`, `height`.
 {{% mastodon
 status="https://mastodon.social/@kevingimbel/100700713283716694"
 width="1000" height="500" %}}
+```
+
+### `fileRel`
+
+This will insert a link to a file by relative path into your content. 
+To use it, pass the `pathURL` of your file. 
+
+The arguments `class` and `style` are optional.
+
+```
+{{< fileRel 
+  pathURL="files/file.pdf"
+  name="filename" 
+  class="someclass" 
+  style="somestyle" >}},
 ```
 
 ## Getting help
