@@ -5,6 +5,7 @@ theme = "minimal-bootstrap-hugo-theme"
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
 
 [permalinks]
   post = "/:filename/"
