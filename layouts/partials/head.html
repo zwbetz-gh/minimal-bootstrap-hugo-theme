@@ -43,4 +43,8 @@
   {{ end }}
 
   {{ partial "style.html" . }}
+
+  {{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
+  {{ partial "google-analytics-gtag.html" . }}
+  {{ end }}
 </head>
