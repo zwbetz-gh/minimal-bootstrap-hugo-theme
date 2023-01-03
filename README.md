@@ -1,3 +1,9 @@
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
+**WARNING:** This repo is no longer maintained. It's archived and read-only.
+
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
 # Minimal Bootstrap Hugo Theme
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e3929c16-50cc-4e8f-a8f2-e63acc35c83d/deploy-status)](https://app.netlify.com/sites/minimal-bootstrap-hugo-theme/deploys)
